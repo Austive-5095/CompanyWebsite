@@ -1,0 +1,404 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Inter,sans-serif;
+    background:#f8f6f2;
+    color:#222;
+}
+
+/* NAVBAR */
+
+.navbar{
+
+    position:sticky;
+    top:0;
+
+    background:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 80px;
+
+    border-bottom:1px solid #e5e5e5;
+
+    z-index:1000;
+}
+
+/*LOGO和COMPANY NAME*/
+
+.logo{
+
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+}
+
+.logo img{
+    height:50px;
+    width:auto;
+}
+
+
+.logo-text{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.navbar ul{
+
+    display:flex;
+    list-style:none;
+    gap:40px;
+
+}
+
+.navbar a{
+
+    text-decoration:none;
+    color:#222;
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    color:#999;
+
+}
+
+/* HERO */
+
+.hero{
+
+    height:90vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+.hero h1{
+
+    font-size:65px;
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    color:#666;
+
+    width:650px;
+    max-width:100%;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+.hero button{
+
+    margin-top:40px;
+
+    padding:15px 35px;
+
+    border:none;
+
+    background:#222;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.hero button:hover{
+
+    background:#666;
+
+}
+
+/* ABOUT */
+
+.about{
+
+    width:90%;
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:80px;
+
+    padding:120px 0;
+
+}
+
+.about img{
+
+    width:550px;
+
+    border-radius:10px;
+
+}
+
+.about h2{
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.about p{
+
+    color:#666;
+
+    line-height:2;
+
+}
+
+/* SERVICES */
+
+.services{
+
+    background:white;
+
+    padding:120px 80px;
+
+}
+
+.services h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:60px;
+
+}
+
+.cards{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:#f8f6f2;
+
+    padding:40px;
+
+    flex:1;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    padding:40px;
+
+    text-align:center;
+
+    border-top:1px solid #ddd;
+
+    background:#fff;
+
+}
+/*=================================================*/
+/*FOOTER*/
+
+.footer{
+    background:#f8f6f2;
+    border-top:1px solid #e5e5e5;
+    padding:80px 8% 30px;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:2.2fr 1fr 1.5fr 1fr;
+    gap:50px;
+    align-items:start;
+}
+
+/* TITLES */
+
+.footer-box h2,
+.footer-box h3{
+    font-size:22px;
+    font-weight:600;
+    color:#222;
+    margin-bottom:25px;
+    letter-spacing:.5px;
+}
+
+/* COMPANY DESCRIPTION */
+
+.footer-box p{
+    color:#666;
+    line-height:1.9;
+    font-size:15px;
+    max-width:330px;
+}
+
+/* LIST */
+
+.footer-box ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.footer-box ul li{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    margin-bottom:15px;
+    color:#666;
+    line-height:1.8;
+    word-break:break-word;
+}
+
+.footer-box ul li i{
+    color:#A58A5A;
+    font-size:16px;
+    min-width:18px;
+    margin-top:5px;
+}
+
+/* LINKS */
+
+.footer-box a{
+    display:inline-block;
+    text-decoration:none;
+    color:#666;
+    transition:all .3s ease;
+}
+
+.footer-box a:hover{
+    color:#A58A5A;
+    transform:translateX(5px);
+}
+
+/* SOCIAL */
+
+.social-links{
+    display:flex;
+    gap:15px;
+    margin-top:5px;
+}
+
+.social-links a{
+    width:42px;
+    height:42px;
+    border:1px solid #ddd;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#555;
+    font-size:17px;
+    transition:all .3s ease;
+}
+
+.social-links a:hover{
+    background:#A58A5A;
+    color:#fff;
+    border-color:#A58A5A;
+    transform:translateY(-5px);
+}
+
+/* COPYRIGHT */
+
+.footer-bottom{
+    margin-top:70px;
+    padding-top:25px;
+    border-top:1px solid #ddd;
+    text-align:center;
+    color:#777;
+    font-size:14px;
+    letter-spacing:.5px;
+}
+
+/* TABLET */
+
+@media (max-width:992px){
+
+    .footer-container{
+        grid-template-columns:repeat(2,1fr);
+        gap:40px;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .footer{
+        padding:60px 30px 25px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .footer-box p{
+        max-width:100%;
+    }
+
+    .social-links{
+        justify-content:flex-start;
+    }
+
+}
