@@ -41,16 +41,21 @@ include 'includes/navbar.php';
         <h2>About Us</h2>
 
         <p>
-            We create elegant websites and digital products
-            with a strong focus on simplicity, functionality,
-            and user experience.
+            Austive Human Capital Sdn. Bhd. is committed to empowering individuals and organisations through quality human capital 
+            development and professional training. We believe that people are the foundation of every successful business, which is 
+            why we strive to provide practical learning experiences that enhance skills, improve performance, and support long-term 
+            growth.<br><br>
+
+            With a strong focus on professionalism, innovation, and continuous learning, we work closely with our clients to deliver 
+            training solutions that meet today's evolving workforce needs. Our goal is to become a trusted partner in developing capable 
+            talent and building a stronger future for businesses and communities.
         </p>
 
     </div>
 
     <div class="image">
 
-        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900" alt="office">
+        <img src="images/aboutphoto.png" alt="About Us">
 
     </div>
 
