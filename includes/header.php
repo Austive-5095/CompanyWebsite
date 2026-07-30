@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/headerfooter.css">
     <link rel="stylesheet" href="css/aboutus.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/home-animate.css">
 
 
     <!-- Font Awesome -->

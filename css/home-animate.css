@@ -26,6 +26,32 @@
     color: #222;
 }
 
+.about .text h2,
+.about .text p,
+.about .image img {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.about.is-visible .text h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+}
+
+.about.is-visible .text p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+.about.is-visible .image img {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
 .about p,
 .service-item p {
     color: #666;
@@ -41,6 +67,43 @@
 
 .services {
     padding: 40px 8% 100px;
+}
+
+.services h2,
+.services-list .service-item,
+.services .view-course-btn {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.services.is-visible h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+}
+
+.services.is-visible .service-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.services.is-visible .service-item:nth-child(1) {
+    transition-delay: 0.25s;
+}
+
+.services.is-visible .service-item:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+.services.is-visible .service-item:nth-child(3) {
+    transition-delay: 0.55s;
+}
+
+.services.is-visible .view-course-btn {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.7s;
 }
 
 .services-list {
