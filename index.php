@@ -57,9 +57,6 @@ include 'includes/navbar.php';
 
     <img src="images/aboutphoto1.png" class="photo position1" alt="About Us">
 
-    <img src="images/aboutphoto2.webp" class="photo position2" alt="Training">
-
-    <img src="images/aboutphoto3.webp" class="photo position3" alt="Corporate">
 
 </div>
 
