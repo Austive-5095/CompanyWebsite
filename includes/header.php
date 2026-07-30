@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/headerfooter.css">
+    <link rel="stylesheet" href="css/contact.css">
 
 
     <!-- Font Awesome -->
