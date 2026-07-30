@@ -96,7 +96,7 @@
                     <i class="fab fa-linkedin-in"></i>
                 </a>
 
-                <a href="#">
+                <a href="https://www.youtube.com/@AustiveHumanCapital">
                     <i class="fab fa-youtube"></i>
                 </a>
 
