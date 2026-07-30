@@ -22,6 +22,12 @@ include 'includes/header.php';
 
 ?>
 
+<div class="trainer-back">
+    <a href="javascript:history.back()" class="back-link">
+        ← Back
+    </a>
+</div>
+
 <section class="trainer-detail">
 
     <div class="trainer-photo">

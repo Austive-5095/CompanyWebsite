@@ -446,3 +446,41 @@
     }
 
 }
+
+/* ================= BACK ================= */
+
+.trainer-back{
+
+    max-width:1700px;
+
+    margin:120px auto 40px;
+
+    padding:0 80px;
+
+}
+
+.back-link{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    color:#666;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+    padding:6px 0;
+
+}
+
+.back-link:hover{
+
+    color:#A58A5A;
+
+    letter-spacing:1px;
+
+}
