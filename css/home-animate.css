@@ -1,119 +1,114 @@
-.about,
-.services {
+.home-about,
+.home-services {
     opacity: 0;
     transform: translateY(36px);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.about.is-visible,
-.services.is-visible {
+.home-about.is-visible,
+.home-services.is-visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-.about {
+.home-about {
     padding: 100px 8% 80px;
 }
 
-.about .text {
+.home-about-text {
     max-width: 620px;
 }
 
-.about h2,
-.services h2 {
+.home-about h2,
+.home-services h2 {
     font-size: 36px;
     margin-bottom: 20px;
     color: #222;
 }
 
-.about .text h2,
-.about .text p,
-.about .image img {
+.home-about .home-about-text h2,
+.home-about .home-about-text p,
+.home-about .home-about-image img,
+.home-services h2,
+.home-services .home-service-item,
+.home-services .view-course-btn {
     opacity: 0;
     transform: translateY(18px);
     transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-.about.is-visible .text h2 {
+.home-about.is-visible .home-about-text h2 {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.1s;
 }
 
-.about.is-visible .text p {
+.home-about.is-visible .home-about-text p {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.4s;
 }
 
-.about.is-visible .image img {
+.home-about.is-visible .home-about-image img {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.4s;
 }
 
-.about p,
-.service-item p {
+.home-about p,
+.home-service-item p {
     color: #666;
     line-height: 1.8;
 }
 
-.about .image img {
+.home-about .home-about-image img {
     width: 100%;
     max-width: 520px;
     border-radius: 16px;
     box-shadow: 0 16px 40px rgba(34, 34, 34, 0.08);
 }
 
-.services {
+.home-services {
     padding: 40px 8% 100px;
 }
 
-.services h2,
-.services-list .service-item,
-.services .view-course-btn {
-    opacity: 0;
-    transform: translateY(18px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-}
-
-.services.is-visible h2 {
+.home-services.is-visible h2 {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.1s;
 }
 
-.services.is-visible .service-item {
+.home-services.is-visible .home-service-item {
     opacity: 1;
     transform: translateY(0);
 }
 
-.services.is-visible .service-item:nth-child(1) {
+.home-services.is-visible .home-service-item:nth-child(1) {
     transition-delay: 0.25s;
 }
 
-.services.is-visible .service-item:nth-child(2) {
+.home-services.is-visible .home-service-item:nth-child(2) {
     transition-delay: 0.4s;
 }
 
-.services.is-visible .service-item:nth-child(3) {
+.home-services.is-visible .home-service-item:nth-child(3) {
     transition-delay: 0.55s;
 }
 
-.services.is-visible .view-course-btn {
+.home-services.is-visible .view-course-btn {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.7s;
 }
 
-.services-list {
+.home-services-list {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
     margin-top: 24px;
 }
 
-.service-item {
+.home-service-item {
     background: #fff;
     border: 1px solid #ece7de;
     border-radius: 16px;
@@ -121,7 +116,7 @@
     box-shadow: 0 10px 28px rgba(34, 34, 34, 0.05);
 }
 
-.service-item h3 {
+.home-service-item h3 {
     margin-bottom: 10px;
     font-size: 20px;
     color: #222;
@@ -143,7 +138,7 @@
 }
 
 @media (max-width: 900px) {
-    .services-list {
+    .home-services-list {
         grid-template-columns: 1fr;
     }
 }

@@ -34,9 +34,9 @@ include 'includes/navbar.php';
 
 </section>
 
-<section class="about">
+<section class="home-about">
 
-    <div class="text">
+    <div class="home-about-text">
 
         <h2>About Us</h2>
 
@@ -53,7 +53,7 @@ include 'includes/navbar.php';
 
     </div>
 
-    <div class="image">
+    <div class="home-about-image">
 
         <img src="images/aboutphoto.png" alt="About Us">
 
@@ -61,23 +61,23 @@ include 'includes/navbar.php';
 
 </section>
 
-<section class="services">
+<section class="home-services">
 
     <h2>Our Services</h2>
 
-    <div class="services-list">
+    <div class="home-services-list">
 
-        <div class="service-item">
+        <div class="home-service-item">
             <h3>Web Design</h3>
             <p>Modern and responsive websites.</p>
         </div>
 
-        <div class="service-item">
+        <div class="home-service-item">
             <h3>Development</h3>
             <p>Professional web applications.</p>
         </div>
 
-        <div class="service-item">
+        <div class="home-service-item">
             <h3>Branding</h3>
             <p>Minimal and memorable identity.</p>
         </div>
@@ -97,22 +97,28 @@ include 'includes/footer.php';
 <script src="js/main.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const sections = document.querySelectorAll('.about, .services');
+        const sections = document.querySelectorAll('.home-about, .home-services');
 
-        const observer = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target);
-                }
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.2
             });
-        }, {
-            threshold: 0.2
-        });
 
-        sections.forEach(function (section) {
-            observer.observe(section);
-        });
+            sections.forEach(function (section) {
+                observer.observe(section);
+            });
+        } else {
+            sections.forEach(function (section) {
+                section.classList.add('is-visible');
+            });
+        }
     });
 </script>
 

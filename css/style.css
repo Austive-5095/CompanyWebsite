@@ -86,9 +86,9 @@ body.contact-page{
     transform:translateY(-2px);
 }
 
-/* ABOUT */
+/* HOME ABOUT */
 
-.about{
+.home-about{
 
     width:90%;
     margin:auto;
@@ -105,7 +105,7 @@ body.contact-page{
 
 }
 
-.about img{
+.home-about img{
 
     width:500px;
 
@@ -115,7 +115,7 @@ body.contact-page{
 
 }
 
-.about h2{
+.home-about h2{
 
     font-size:40px;
 
@@ -125,7 +125,7 @@ body.contact-page{
 
 }
 
-.about p{
+.home-about p{
 
     color:#666;
 
@@ -137,9 +137,9 @@ body.contact-page{
 
 }
 
-/* SERVICES */
+/* HOME SERVICES */
 
-.services{
+.home-services{
 
     background:white;
 
@@ -149,7 +149,7 @@ body.contact-page{
 
 }
 
-.services h2{
+.home-services h2{
 
     text-align:center;
 
@@ -159,7 +159,7 @@ body.contact-page{
 
 }
 
-.services-list{
+.home-services-list{
 
     max-width:700px;
     margin:0 auto 30px;
@@ -170,7 +170,7 @@ body.contact-page{
 
 }
 
-.service-item{
+.home-service-item{
 
     padding:0;
 
@@ -182,7 +182,7 @@ body.contact-page{
 
 }
 
-.service-item h3{
+.home-service-item h3{
 
     margin-bottom:8px;
 
@@ -192,7 +192,7 @@ body.contact-page{
 
 }
 
-.service-item p{
+.home-service-item p{
 
     color:#666;
 
