@@ -74,11 +74,14 @@ include 'includes/navbar.php';
 
         </a>
 
-        <div class="team-card member2">
+        <a href="alanox.php" class="team-card member2">
+
             <img src="images/alanox.png" alt="Tan Chien Loon (Alanox)">
+
             <h3>Tan Chien Loon (Alanox)</h3>
+            
             <span>Teambuilding Trainer</span>
-        </div>
+        </a>
 
         <div class="team-card member3">
             <img src="images/annie.png" alt="Annie Wong Loo Kim">
