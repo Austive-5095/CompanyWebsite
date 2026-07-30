@@ -53,11 +53,15 @@ include 'includes/navbar.php';
 
     </div>
 
-    <div class="home-about-image">
+<div class="home-about-image">
 
-        <img src="images/aboutphoto.png" alt="About Us">
+    <img src="images/aboutphoto1.png" class="photo position1" alt="About Us">
 
-    </div>
+    <img src="images/aboutphoto2.webp" class="photo position2" alt="Training">
+
+    <img src="images/aboutphoto3.webp" class="photo position3" alt="Corporate">
+
+</div>
 
 </section>
 
