@@ -12,6 +12,7 @@
     <!-- CSS -->
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/headerfooter.css">
 
 
     <!-- Font Awesome -->

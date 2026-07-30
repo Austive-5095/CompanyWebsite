@@ -9,7 +9,7 @@ include 'includes/navbar.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muji Company</title>
+    <title>Austive Human Capital Sdn Bhd</title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -28,7 +28,7 @@ include 'includes/navbar.php';
             organizations through innovative human resource solutions.
         </p>
 
-        <button>Get Started</button>
+        <button>View Course</button>
 
     </div>
 
@@ -60,24 +60,26 @@ include 'includes/navbar.php';
 
     <h2>Our Services</h2>
 
-    <div class="cards">
+    <div class="services-list">
 
-        <div class="card">
+        <div class="service-item">
             <h3>Web Design</h3>
             <p>Modern and responsive websites.</p>
         </div>
 
-        <div class="card">
+        <div class="service-item">
             <h3>Development</h3>
             <p>Professional web applications.</p>
         </div>
 
-        <div class="card">
+        <div class="service-item">
             <h3>Branding</h3>
             <p>Minimal and memorable identity.</p>
         </div>
 
     </div>
+
+    <a href="contact.php" class="view-course-btn">View Course</a>
 
 </section>
 
@@ -86,6 +88,8 @@ include 'includes/navbar.php';
 include 'includes/footer.php';
 
 ?>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>

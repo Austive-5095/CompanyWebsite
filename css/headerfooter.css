@@ -1,0 +1,302 @@
+header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    background:#fff;
+
+    z-index:9999;
+
+    transition:
+        transform .4s ease,
+        background .4s ease,
+        box-shadow .4s ease;
+}
+
+header.scrolled{
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+header.hide{
+
+    transform:translateY(-100%);
+}
+
+/* =========================== NAVBAR =========================== */ 
+.navbar{
+
+    width:100%;
+
+    max-width:1400px;
+
+    margin:0 auto;
+
+    padding:0 40px;
+
+    height:85px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-sizing:border-box;
+
+}
+    
+    /* =========================== LOGO =========================== */ 
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px; 
+
+} 
+        
+.logo-img{
+
+    height:55px; 
+    
+} 
+    
+.logo-text{ 
+    
+    font-size:17px; 
+    
+    font-weight:700;
+
+    color:#222;
+
+    letter-spacing:.5px; 
+
+} 
+    
+/* =========================== MENU =========================== */ 
+.navbar ul{ 
+    
+    display:flex; 
+    
+    list-style:none; 
+    
+    gap:35px; 
+
+} 
+
+.navbar ul li{ 
+    
+    list-style:none; 
+
+} 
+
+.navbar ul li a{ 
+    
+    text-decoration:none; 
+    
+    color:#222; 
+    
+    font-weight:500; 
+    
+    transition:.3s; 
+    
+    position:relative; 
+
+} 
+
+/* Hover Line */ 
+
+.navbar ul li a::after{ 
+    
+    content:""; 
+    
+    position:absolute; 
+    
+    left:0; 
+    
+    bottom:-8px; 
+    
+    width:0; 
+    
+    height:2px; 
+    
+    background:#A58A5A; 
+    
+    transition:.3s; 
+
+} 
+
+.navbar ul li a:hover{ 
+    
+    color:#A58A5A; 
+
+} 
+
+.navbar ul li a:hover::after{ 
+    
+    width:100%; 
+
+}
+
+/* FOOTER */
+
+.footer{
+    background:#f8f6f2;
+    border-top:1px solid #e5e5e5;
+    padding:80px 8% 30px;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:2.2fr 1fr 1.5fr 1fr;
+    gap:50px;
+    align-items:start;
+}
+
+/* TITLES */
+
+.footer-box h2,
+.footer-box h3{
+    font-size:22px;
+    font-weight:600;
+    color:#222;
+    margin-bottom:25px;
+    letter-spacing:.5px;
+}
+
+.footer-box h2{
+    transform: translateX(-100px);
+}
+
+/* COMPANY DESCRIPTION */
+
+.footer-box p{
+    color:#666;
+    line-height:1.9;
+    font-size:15px;
+    max-width:330px;
+}
+
+/* LIST */
+
+.footer-box ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.footer-box ul li{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    margin-bottom:15px;
+    color:#666;
+    line-height:1.8;
+    word-break:break-word;
+}
+
+.footer-box ul li span{
+    flex:1;
+}
+
+
+.footer-box ul li i{
+    color:#A58A5A;
+    font-size:16px;
+    min-width:18px;
+    margin-top:5px;
+}
+
+/* LINKS */
+
+.footer-box a{
+    display:inline-block;
+    text-decoration:none;
+    color:#666;
+    transition:all .3s ease;
+}
+
+.footer-box a:hover{
+    color:#A58A5A;
+    transform:translateX(5px);
+}
+
+/* SOCIAL */
+
+.social-links{
+    display:flex;
+    gap:15px;
+    margin-top:5px;
+}
+
+.social-links a{
+    width:42px;
+    height:42px;
+    border:1px solid #ddd;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#555;
+    font-size:17px;
+    transition:all .3s ease;
+}
+
+.social-links a:hover{
+    background:#A58A5A;
+    color:#fff;
+    border-color:#A58A5A;
+    transform:translateY(-5px);
+}
+
+/* COPYRIGHT */
+
+.footer-bottom{
+    margin-top:70px;
+    padding-top:25px;
+    border-top:1px solid #ddd;
+    text-align:center;
+    color:#777;
+    font-size:14px;
+    letter-spacing:.5px;
+}
+
+/* TABLET */
+
+@media (max-width:992px){
+
+    .footer-container{
+        grid-template-columns:repeat(2,1fr);
+        gap:40px;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .footer{
+        padding:60px 30px 25px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .footer-box p{
+        max-width:100%;
+    }
+
+    .social-links{
+        justify-content:flex-start;
+    }
+
+}
