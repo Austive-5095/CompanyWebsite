@@ -147,17 +147,20 @@
 }
 
 .contact-submit {
-    border: none;
+    border: 1px solid #e1ddd3;
     padding: 14px 20px;
     border-radius: 999px;
-    background: #222;
-    color: #fff;
+    background: linear-gradient(135deg, #f6efe6 0%, #efe4d0 100%);
+    color: #222;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 6px 16px rgba(34, 34, 34, 0.06);
 }
 
 .contact-submit:hover {
-    background: #a58a5a;
+    background: linear-gradient(135deg, #efe4d0 0%, #e7d8be 100%);
+    transform: translateY(-1px);
 }
 
 .contact-map-card {
@@ -212,6 +215,23 @@
     font-size: 15px;
     line-height: 1.8;
     color: #4d4d4d;
+}
+
+.contact-status {
+    margin: 14px 0 0;
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.contact-status.success {
+    background: #f1f8f2;
+    color: #2f6d3d;
+}
+
+.contact-status.error {
+    background: #fcf1f1;
+    color: #9b2c2c;
 }
 
 .contact-hours {

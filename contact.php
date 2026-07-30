@@ -9,7 +9,7 @@ include 'includes/header.php';
 <section class="contact-hero">
     <div class="contact-hero-inner">
         <p class="contact-eyebrow">Contact Us</p>
-        <h1>Let’s talk about your next learning journey.</h1>
+        <h1>Let’s talk about your next learning journey</h1>
         <p>
             We support course enquiries, corporate training, certification guidance,
             and partnership discussions with a calm, thoughtful experience.
@@ -86,7 +86,15 @@ include 'includes/header.php';
             <h2>Send an Enquiry</h2>
             <p>Fill in the details below and we will get back to you as soon as possible.</p>
 
-            <form class="contact-form" action="#" method="post">
+            <?php
+            if (isset($_GET['status']) && $_GET['status'] === 'success') {
+                echo '<p class="contact-status success">Your enquiry has been sent successfully.</p>';
+            } elseif (isset($_GET['status']) && $_GET['status'] === 'error') {
+                echo '<p class="contact-status error">Sorry, your enquiry could not be sent. Please try again later.</p>';
+            }
+            ?>
+
+            <form class="contact-form" action="submit_enquiry.php" method="post">
                 <div class="contact-field">
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="name" placeholder="Your name" required>
