@@ -13,11 +13,10 @@
         </div>
         <ul>
 
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="index.php#about">About</a></li>
+            <li><a href="index.php#services">Services</a></li>
+            <li><a href="contact.php">Contact</a></li>
 
         </ul>
 
