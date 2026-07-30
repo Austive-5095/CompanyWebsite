@@ -1,0 +1,8 @@
+# Database
+/includes/db.php
+
+# API Keys
+/includes/config.php
+
+#email password
+/includes/email_config.php
