@@ -88,7 +88,7 @@
                     <i class="fab fa-facebook-f"></i>
                 </a>
 
-                <a href="#">
+                <a href="https://www.instagram.com/austive_human_capital?igsh=MTU3M2UzdXk1cWFidA==">
                     <i class="fab fa-instagram"></i>
                 </a>
 
@@ -96,7 +96,7 @@
                     <i class="fab fa-linkedin-in"></i>
                 </a>
 
-                <a href="#">
+                <a href="https://www.youtube.com/@AustiveHumanCapital">
                     <i class="fab fa-youtube"></i>
                 </a>
 
