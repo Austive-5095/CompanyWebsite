@@ -272,7 +272,17 @@ footer{
 
 /* TITLES */
 
-.footer-box h2,
+.footer-box h2
+{
+    font-size:22px;
+    font-weight:600;
+    color:#222;
+    margin-bottom:25px;
+    letter-spacing:.5px;
+    transform: translateX(-100px);
+}
+
+
 .footer-box h3{
     font-size:22px;
     font-weight:600;
@@ -307,6 +317,11 @@ footer{
     line-height:1.8;
     word-break:break-word;
 }
+
+.footer-box ul li span{
+    flex:1;
+}
+
 
 .footer-box ul li i{
     color:#A58A5A;
