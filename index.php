@@ -95,6 +95,26 @@ include 'includes/footer.php';
 ?>
 
 <script src="js/main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const sections = document.querySelectorAll('.about, .services');
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        sections.forEach(function (section) {
+            observer.observe(section);
+        });
+    });
+</script>
 
 </body>
 </html>
