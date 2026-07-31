@@ -1201,6 +1201,8 @@ body.contact-page{
 
     position:relative;
 
+    padding:20px 0;
+
 }
 
 .clients-track{
@@ -1209,7 +1211,7 @@ body.contact-page{
 
     align-items:center;
 
-    gap:80px;
+    gap:40px;
 
     width:max-content;
 
@@ -1219,12 +1221,17 @@ body.contact-page{
 
 .clients-track img{
 
-    width:200px;
-    height:150px;
+    width:140px;
+    height:140px;
 
-    object-fit:contain;
+    object-fit:cover;
 
     flex-shrink:0;
+
+    padding:8px;
+    border:2px solid #d9d9d9;
+    border-radius:50%;
+    background:#fff;
 
     transition:.35s ease;
 

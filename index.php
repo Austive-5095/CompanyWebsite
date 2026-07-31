@@ -364,7 +364,6 @@ include 'includes/navbar.php';
 
             <!-- 复制一份，做无限滚动 -->
 
-<img src="images/logo1.png" alt="Client">
             <img src="images/logo/logo2.png" alt="Client">
             <img src="images/logo/logo3.png" alt="Client">
             <img src="images/logo/logo4.png" alt="Client">
