@@ -39,7 +39,7 @@ include 'includes/navbar.php';
             organizations through innovative human resource solutions.
         </p>
 
-        <button>View Course</button>
+        <a href="course.php"><button>View Course</button></a>   
 
     </div>
 
@@ -186,7 +186,7 @@ include 'includes/navbar.php';
 
     </a>
 
-    <?php endforeach; ?>`
+    <?php endforeach; ?>
 
     <div class="training-btn">
 
