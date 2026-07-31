@@ -141,3 +141,13 @@
     color:#A58A5A;
 
 }
+
+@media (max-width:768px){
+    .course-list{ margin:72px auto; padding:0 24px; }
+    .course-header{ margin-bottom:42px; }
+    .course-header h1{ font-size:34px; }
+    .course-item{ grid-template-columns:38px minmax(0, 1fr) 24px; gap:12px; padding:22px 0; }
+    .course-title h2{ font-size:20px; line-height:1.35; }
+    .course-arrow{ font-size:22px; }
+    .course-item:hover{ padding-left:8px; }
+}

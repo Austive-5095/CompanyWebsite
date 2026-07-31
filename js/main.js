@@ -3,6 +3,22 @@
 let lastScroll = 0;
 
 const header = document.getElementById("header");
+const navToggle = document.querySelector('.nav-toggle');
+const navActions = document.querySelector('.nav-actions');
+
+if (navToggle && navActions) {
+    navToggle.addEventListener('click', () => {
+        const isOpen = navActions.classList.toggle('is-open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+        navToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    });
+
+    navActions.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+        navActions.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Open navigation menu');
+    }));
+}
 
 window.addEventListener("scroll", () => {
 

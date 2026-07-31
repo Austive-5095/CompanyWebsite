@@ -103,7 +103,7 @@ body.contact-page{
 
 .hero{
 
-    height:90vh;
+    min-height:90vh;
 
     display:flex;
     justify-content:center;
@@ -180,6 +180,40 @@ body.contact-page{
     align-items:start;
 }
 
+@media (max-width:768px){
+    .trainer-detail{
+        grid-template-columns:1fr;
+        padding:0 24px;
+        gap:40px;
+        margin:60px auto;
+    }
+
+    .trainer-photo img{
+        min-height:auto;
+        max-height:none;
+        height:auto;
+    }
+
+    .trainer-info h1{
+        font-size:36px;
+        margin-bottom:30px;
+    }
+
+    .trainer-section h3{
+        font-size:20px;
+    }
+
+    .trainer-section p,
+    .trainer-section li{
+        font-size:16px;
+        line-height:1.9;
+    }
+
+    .trainer-back{
+        padding:0 24px;
+        margin:90px auto 20px;
+    }
+}
 .trainer-photo{
     position:sticky;
     top:auto;
@@ -274,7 +308,7 @@ body.contact-page{
 
     position:relative;
 
-    width:480px;
+    width:min(480px, 100%);
     min-height:520px;
     flex-shrink:0;
     display:flex;

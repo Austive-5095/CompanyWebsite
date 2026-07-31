@@ -279,6 +279,42 @@ header.hide{
 
 @media (max-width:768px){
 
+    .navbar{
+        padding:0 20px;
+        height:auto;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+        padding-top:14px;
+        padding-bottom:14px;
+    }
+
+    .logo{
+        width:100%;
+        justify-content:center;
+        gap:10px;
+    }
+
+    .logo-img{
+        height:44px;
+    }
+
+    .logo-text{
+        font-size:13px;
+        text-align:center;
+        line-height:1.4;
+    }
+
+    .navbar ul{
+        gap:14px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .navbar ul li a{
+        font-size:14px;
+    }
+
     .footer{
         padding:60px 30px 25px;
     }
@@ -296,4 +332,41 @@ header.hide{
         justify-content:flex-start;
     }
 
+}
+
+@media (max-width:768px){
+    header{position:sticky;transform:none !important}
+    .navbar{position:relative;height:72px;padding:0 18px;justify-content:space-between}
+    .logo{width:auto;justify-content:flex-start;gap:10px}
+    .logo-img{height:44px}
+    .logo-text{max-width:210px;font-size:11px;text-align:left;line-height:1.4}
+    .nav-toggle{display:block}
+    .nav-actions{position:absolute;top:72px;left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:18px;padding:20px;background:#fff;border-top:1px solid #eee;border-bottom:1px solid #eee;box-shadow:0 12px 22px rgba(0,0,0,.08)}
+    .nav-actions.is-open{display:flex}
+    .navbar ul{width:100%;flex-direction:column;gap:0}
+    .navbar ul li a{display:block;padding:11px 0;font-size:16px}
+    .navbar ul li a::after{bottom:6px}
+    .elearning-link{width:100%}
+}
+
+/* Mobile navigation */
+.nav-actions{display:flex;align-items:center;gap:22px}
+.elearning-link{display:inline-flex;align-items:center;justify-content:center;padding:11px 20px;background:#f7f3ec;color:#333;border:1px solid #d8cdba;text-decoration:none;border-radius:999px;font-size:15px;font-weight:500;transition:all .3s ease;white-space:nowrap}
+.elearning-link:hover{background:#a58a5a;color:#fff;border-color:#a58a5a;transform:translateY(-2px)}
+.nav-toggle{display:none;width:44px;height:44px;padding:10px;border:1px solid #d8cdba;border-radius:10px;background:#fff;cursor:pointer}
+.nav-toggle span{display:block;height:2px;margin:5px 0;background:#222}
+
+@media (max-width:768px){
+    header{position:sticky;transform:none !important}
+    .navbar{position:relative;height:72px;padding:0 18px;justify-content:space-between}
+    .logo{width:auto;justify-content:flex-start;gap:10px}
+    .logo-img{height:44px}
+    .logo-text{max-width:210px;font-size:11px;text-align:left;line-height:1.4}
+    .nav-toggle{display:block}
+    .nav-actions{position:absolute;top:72px;left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:18px;padding:20px;background:#fff;border-top:1px solid #eee;border-bottom:1px solid #eee;box-shadow:0 12px 22px rgba(0,0,0,.08)}
+    .nav-actions.is-open{display:flex}
+    .navbar ul{width:100%;flex-direction:column;gap:0}
+    .navbar ul li a{display:block;padding:11px 0;font-size:16px}
+    .navbar ul li a::after{bottom:6px}
+    .elearning-link{width:100%}
 }

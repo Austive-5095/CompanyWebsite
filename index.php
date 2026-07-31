@@ -23,6 +23,7 @@ include 'includes/navbar.php';
     <title>Austive Human Capital Sdn Bhd</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -48,25 +49,24 @@ include 'includes/navbar.php';
 <section class="home-about">
 
     <div class="home-about-text">
+        <p class="home-about-eyebrow">WHO WE ARE</p>
+        <h2>People-first learning for <span>lasting growth.</span></h2>
 
-        <h2>About Us</h2>
+        <div class="home-about-copy">
+            <p>Austive Human Capital Sdn. Bhd. helps individuals and organisations build practical skills through quality training and professional development.</p>
+            <p>We partner with clients to create learning experiences that strengthen performance, support continuous growth, and prepare people for what is next.</p>
+        </div>
 
-        <p>
-            Austive Human Capital Sdn. Bhd. is committed to empowering individuals and organisations through quality human capital 
-            development and professional training. We believe that people are the foundation of every successful business, which is 
-            why we strive to provide practical learning experiences that enhance skills, improve performance, and support long-term 
-            growth.<br><br>
-
-            With a strong focus on professionalism, innovation, and continuous learning, we work closely with our clients to deliver 
-            training solutions that meet today's evolving workforce needs. Our goal is to become a trusted partner in developing capable 
-            talent and building a stronger future for businesses and communities.
-        </p>
+        <div class="home-about-points">
+            <span>Practical learning</span>
+            <span>Trusted partnership</span>
+        </div>
 
     </div>
 
 <div class="home-about-image">
 
-    <img src="images/aboutphoto1.png" class="photo position1" alt="About Us">
+    <img src="images/aboutphoto1.png" class="about-image-main" alt="Participants taking part in a training session">
 
 
 </div>
@@ -204,14 +204,7 @@ include 'includes/navbar.php';
 
         <div class="testimonial-header">
 
-            <p class="section-subtitle">TESTIMONIALS</p>
-
             <h2>What Our Clients Say</h2>
-
-            <p>
-                Austive Human Capital provides us with top class training courses and consultants. We are happy and proud to have 
-                them as our training partner! 
-            </p>
 
         </div>
 

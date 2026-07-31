@@ -16,10 +16,6 @@ include 'includes/navbar.php';
 
 ?>
 
-<head>
-    <link rel="stylesheet" href="css/course.css">
-</head>
-
 <div class="trainer-back">
     <a href="javascript:history.back()" class="back-link">
         ← Back

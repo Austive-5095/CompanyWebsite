@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="css/aboutus.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/home-animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/course.css">
+    <script src="js/main.js" defer></script>
 
 
     <!-- Font Awesome -->
