@@ -4,7 +4,7 @@
 |--------------------------------------------------------------------------
 | Austive Website - Contact Form
 |--------------------------------------------------------------------------
-| This file sends Contact Us enquiries through Hostinger SMTP.
+| Sends Contact Us enquiries through Hostinger SMTP.
 |
 | email_config.php should be OUTSIDE public_html:
 |
@@ -115,6 +115,43 @@ $message = mb_substr($message, 0, 5000);
 
 
 /* =========================================================
+   ESCAPE HTML
+   ========================================================= */
+
+$htmlName = htmlspecialchars(
+    $name,
+    ENT_QUOTES,
+    'UTF-8'
+);
+
+$htmlEmail = htmlspecialchars(
+    $email,
+    ENT_QUOTES,
+    'UTF-8'
+);
+
+$htmlPhone = htmlspecialchars(
+    $phone,
+    ENT_QUOTES,
+    'UTF-8'
+);
+
+$htmlTopic = htmlspecialchars(
+    $topic,
+    ENT_QUOTES,
+    'UTF-8'
+);
+
+$htmlMessage = nl2br(
+    htmlspecialchars(
+        $message,
+        ENT_QUOTES,
+        'UTF-8'
+    )
+);
+
+
+/* =========================================================
    SMTP SETTINGS
    ========================================================= */
 
@@ -142,7 +179,9 @@ if (
     empty($fromEmail) ||
     empty($to)
 ) {
-    writeEmailDebug('ERROR: SMTP configuration is incomplete.');
+    writeEmailDebug(
+        'ERROR: SMTP configuration is incomplete.'
+    );
 
     header('Location: contact.php?status=error');
     exit;
@@ -153,34 +192,494 @@ if (
    EMAIL SUBJECT
    ========================================================= */
 
-$subject = 'New enquiry from Austive Website - ' . $topic;
+$subject = 'New Website Enquiry - ' . $topic;
 
 
 /* =========================================================
-   EMAIL BODY
+   HTML EMAIL
    ========================================================= */
 
-$body = "You have received a new enquiry from the Austive website.\r\n\r\n";
+$htmlBody = <<<HTML
+<!DOCTYPE html>
 
-$body .= "========================================\r\n";
-$body .= "CONTACT DETAILS\r\n";
-$body .= "========================================\r\n\r\n";
+<html lang="en">
 
-$body .= "Name: " . $name . "\r\n";
-$body .= "Email: " . $email . "\r\n";
-$body .= "Phone: " . $phone . "\r\n";
-$body .= "Enquiry Type: " . $topic . "\r\n\r\n";
+<head>
 
-$body .= "========================================\r\n";
-$body .= "MESSAGE\r\n";
-$body .= "========================================\r\n\r\n";
+<meta charset="UTF-8">
 
-$body .= $message . "\r\n";
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>New Website Enquiry</title>
+
+</head>
+
+<body style="
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+">
+
+<table
+    width="100%"
+    cellpadding="0"
+    cellspacing="0"
+    border="0"
+    style="background-color: #f4f6f8; padding: 40px 15px;"
+>
+
+<tr>
+
+<td align="center">
+
+<table
+    width="100%"
+    cellpadding="0"
+    cellspacing="0"
+    border="0"
+    style="
+        max-width: 650px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    "
+>
+
+<!-- =====================================================
+     HEADER
+====================================================== -->
+
+<tr>
+
+<td
+    style="
+        padding: 30px 35px;
+        background-color: #111827;
+        color: #ffffff;
+    "
+>
+
+<div style="
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+">
+    Austive Human Capital Management
+</div>
+
+<div style="
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.3;
+">
+    New Website Enquiry
+</div>
+
+</td>
+
+</tr>
+
+
+<!-- =====================================================
+     INTRO
+====================================================== -->
+
+<tr>
+
+<td style="padding: 32px 35px 10px 35px;">
+
+<p style="
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    color: #6b7280;
+">
+    You have received a new enquiry through the
+    Austive website.
+</p>
+
+<p style="
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #111827;
+">
+    {$htmlTopic}
+</p>
+
+</td>
+
+</tr>
+
+
+<!-- =====================================================
+     CONTACT INFORMATION
+====================================================== -->
+
+<tr>
+
+<td style="padding: 25px 35px;">
+
+<table
+    width="100%"
+    cellpadding="0"
+    cellspacing="0"
+    border="0"
+    style="
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        overflow: hidden;
+    "
+>
+
+<tr>
+
+<td
+    colspan="2"
+    style="
+        padding: 15px 18px;
+        background-color: #f9fafb;
+        border-bottom: 1px solid #e5e7eb;
+        font-size: 15px;
+        font-weight: bold;
+        color: #111827;
+    "
+>
+    Contact Information
+</td>
+
+</tr>
+
+
+<tr>
+
+<td
+    width="35%"
+    style="
+        padding: 14px 18px;
+        border-bottom: 1px solid #eeeeee;
+        color: #6b7280;
+        font-size: 14px;
+    "
+>
+    Full Name
+</td>
+
+<td
+    style="
+        padding: 14px 18px;
+        border-bottom: 1px solid #eeeeee;
+        font-size: 14px;
+        font-weight: 600;
+        color: #111827;
+    "
+>
+    {$htmlName}
+</td>
+
+</tr>
+
+
+<tr>
+
+<td
+    style="
+        padding: 14px 18px;
+        border-bottom: 1px solid #eeeeee;
+        color: #6b7280;
+        font-size: 14px;
+    "
+>
+    Email Address
+</td>
+
+<td
+    style="
+        padding: 14px 18px;
+        border-bottom: 1px solid #eeeeee;
+        font-size: 14px;
+    "
+>
+    <a
+        href="mailto:{$htmlEmail}"
+        style="
+            color: #2563eb;
+            text-decoration: none;
+        "
+    >
+        {$htmlEmail}
+    </a>
+</td>
+
+</tr>
+
+
+<tr>
+
+<td
+    style="
+        padding: 14px 18px;
+        border-bottom: 1px solid #eeeeee;
+        color: #6b7280;
+        font-size: 14px;
+    "
+>
+    Phone Number
+</td>
+
+<td
+    style="
+        padding: 14px 18px;
+        border-bottom: 1px solid #eeeeee;
+        font-size: 14px;
+        color: #111827;
+    "
+>
+    {$htmlPhone}
+</td>
+
+</tr>
+
+
+<tr>
+
+<td
+    style="
+        padding: 14px 18px;
+        color: #6b7280;
+        font-size: 14px;
+    "
+>
+    Enquiry Type
+</td>
+
+<td
+    style="
+        padding: 14px 18px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #111827;
+    "
+>
+    {$htmlTopic}
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+
+<!-- =====================================================
+     MESSAGE
+====================================================== -->
+
+<tr>
+
+<td style="padding: 0 35px 30px 35px;">
+
+<div style="
+    font-size: 15px;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 12px;
+">
+    Message
+</div>
+
+<div style="
+    padding: 20px;
+    background-color: #f9fafb;
+    border-left: 4px solid #111827;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #374151;
+">
+    {$htmlMessage}
+</div>
+
+</td>
+
+</tr>
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<tr>
+
+<td
+    style="
+        padding: 22px 35px;
+        background-color: #f9fafb;
+        border-top: 1px solid #e5e7eb;
+        text-align: center;
+    "
+>
+
+<p style="
+    margin: 0 0 5px 0;
+    font-size: 12px;
+    color: #6b7280;
+">
+    This enquiry was submitted through the Austive website.
+</p>
+
+<p style="
+    margin: 0;
+    font-size: 12px;
+    color: #9ca3af;
+">
+    austive.com
+</p>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
+HTML;
+
+/* =========================================================
+   PLAIN TEXT FALLBACK
+========================================================= */
+
+/*
+ * Some email clients do not display HTML.
+ * This is the fallback version.
+ */
+
+$plainBody = '';
+
+$plainBody .= "AUSTIVE HUMAN CAPITAL MANAGEMENT\r\n";
+$plainBody .= "NEW WEBSITE ENQUIRY\r\n";
+$plainBody .= "========================================\r\n\r\n";
+
+$plainBody .= "CONTACT INFORMATION\r\n\r\n";
+
+$plainBody .= "Name: " . $name . "\r\n";
+$plainBody .= "Email: " . $email . "\r\n";
+$plainBody .= "Phone: " . $phone . "\r\n";
+$plainBody .= "Enquiry Type: " . $topic . "\r\n\r\n";
+
+$plainBody .= "MESSAGE\r\n";
+$plainBody .= "========================================\r\n\r\n";
+
+$plainBody .= $message . "\r\n\r\n";
+
+$plainBody .= "----------------------------------------\r\n";
+$plainBody .= "Submitted via austive.com\r\n";
+
+/* =========================================================
+   CREATE MIME BOUNDARY
+   ========================================================= */
+
+$boundary = '=_AUSTIVE_' . md5(uniqid('', true));
+
+/* =========================================================
+   EMAIL HEADERS
+========================================================= */
+
+$emailHeaders = '';
+
+$emailHeaders .= 'From: ' .
+    $fromName .
+    ' <' .
+    $fromEmail .
+    ">\r\n";
+
+$emailHeaders .= 'To: <' .
+    $to .
+    ">\r\n";
+
+/*
+ * VERY IMPORTANT:
+ *
+ * The visitor's email goes into Reply-To.
+ *
+ * When you click Reply in your email client,
+ * it will reply directly to the visitor.
+ */
+
+$emailHeaders .= 'Reply-To: <' .
+    $email .
+    ">\r\n";
+
+$emailHeaders .= 'Subject: ' .
+    encodeSubject($subject) .
+    "\r\n";
+
+$emailHeaders .= "MIME-Version: 1.0\r\n";
+
+$emailHeaders .=
+    'Content-Type: multipart/alternative; boundary="' .
+    $boundary .
+    '"' .
+    "\r\n";
+
+$emailHeaders .= "\r\n";
+
+/* =========================================================
+   CREATE MIME EMAIL BODY
+========================================================= */
+
+$emailData = '';
+
+/*
+ * Plain text version
+ */
+
+$emailData .= '--' . $boundary . "\r\n";
+
+$emailData .=
+    "Content-Type: text/plain; charset=UTF-8\r\n";
+
+$emailData .=
+    "Content-Transfer-Encoding: 8bit\r\n\r\n";
+
+$emailData .= $plainBody . "\r\n";
+
+/*
+ * HTML version
+ */
+
+$emailData .= '--' . $boundary . "\r\n";
+
+$emailData .=
+    "Content-Type: text/html; charset=UTF-8\r\n";
+
+$emailData .=
+    "Content-Transfer-Encoding: 8bit\r\n\r\n";
+
+$emailData .= $htmlBody . "\r\n";
+
+/*
+ * End MIME boundary
+ */
+
+$emailData .= '--' . $boundary . "--\r\n";
 
 /* =========================================================
    CONNECT TO SMTP SERVER
-   ========================================================= */
+========================================================= */
 
 $errno = 0;
 $errstr = '';
@@ -203,24 +702,26 @@ if (!$socket) {
     exit;
 }
 
-
 /* =========================================================
    SOCKET TIMEOUT
-   ========================================================= */
+========================================================= */
 
-stream_set_timeout($socket, 20);
-
+stream_set_timeout(
+    $socket,
+    20
+);
 
 /* =========================================================
-   READ SMTP GREETING
-   ========================================================= */
+   SMTP GREETING
+========================================================= */
 
 $response = readSmtpResponse($socket);
 
 if (!smtpResponseStartsWith($response, '220')) {
 
     writeEmailDebug(
-        'SMTP greeting failed: ' . trim($response)
+        'SMTP greeting failed: ' .
+        trim($response)
     );
 
     fclose($socket);
@@ -229,10 +730,9 @@ if (!smtpResponseStartsWith($response, '220')) {
     exit;
 }
 
-
 /* =========================================================
    EHLO
-   ========================================================= */
+========================================================= */
 
 $response = sendSmtpCommand(
     $socket,
@@ -242,7 +742,8 @@ $response = sendSmtpCommand(
 if (!smtpResponseStartsWith($response, '250')) {
 
     writeEmailDebug(
-        'EHLO failed: ' . trim($response)
+        'EHLO failed: ' .
+        trim($response)
     );
 
     fclose($socket);
@@ -251,10 +752,9 @@ if (!smtpResponseStartsWith($response, '250')) {
     exit;
 }
 
-
 /* =========================================================
    STARTTLS
-   ========================================================= */
+========================================================= */
 
 $response = sendSmtpCommand(
     $socket,
@@ -264,7 +764,8 @@ $response = sendSmtpCommand(
 if (!smtpResponseStartsWith($response, '220')) {
 
     writeEmailDebug(
-        'STARTTLS failed: ' . trim($response)
+        'STARTTLS failed: ' .
+        trim($response)
     );
 
     fclose($socket);
@@ -273,10 +774,9 @@ if (!smtpResponseStartsWith($response, '220')) {
     exit;
 }
 
-
 /* =========================================================
-   ENABLE TLS ENCRYPTION
-   ========================================================= */
+   ENABLE TLS
+========================================================= */
 
 $cryptoEnabled = stream_socket_enable_crypto(
     $socket,
@@ -296,10 +796,9 @@ if (!$cryptoEnabled) {
     exit;
 }
 
-
 /* =========================================================
    EHLO AGAIN AFTER TLS
-   ========================================================= */
+========================================================= */
 
 $response = sendSmtpCommand(
     $socket,
@@ -309,7 +808,8 @@ $response = sendSmtpCommand(
 if (!smtpResponseStartsWith($response, '250')) {
 
     writeEmailDebug(
-        'EHLO after STARTTLS failed: ' . trim($response)
+        'EHLO after STARTTLS failed: ' .
+        trim($response)
     );
 
     fclose($socket);
@@ -321,7 +821,7 @@ if (!smtpResponseStartsWith($response, '250')) {
 
 /* =========================================================
    AUTH LOGIN
-   ========================================================= */
+========================================================= */
 
 $response = sendSmtpCommand(
     $socket,
@@ -331,7 +831,8 @@ $response = sendSmtpCommand(
 if (!smtpResponseStartsWith($response, '334')) {
 
     writeEmailDebug(
-        'AUTH LOGIN failed: ' . trim($response)
+        'AUTH LOGIN failed: ' .
+        trim($response)
     );
 
     fclose($socket);
@@ -343,7 +844,7 @@ if (!smtpResponseStartsWith($response, '334')) {
 
 /* =========================================================
    SMTP USERNAME
-   ========================================================= */
+========================================================= */
 
 $response = sendSmtpCommand(
     $socket,
@@ -353,7 +854,8 @@ $response = sendSmtpCommand(
 if (!smtpResponseStartsWith($response, '334')) {
 
     writeEmailDebug(
-        'SMTP username authentication failed: ' . trim($response)
+        'SMTP username authentication failed: ' .
+        trim($response)
     );
 
     fclose($socket);
@@ -365,7 +867,7 @@ if (!smtpResponseStartsWith($response, '334')) {
 
 /* =========================================================
    SMTP PASSWORD
-   ========================================================= */
+========================================================= */
 
 $response = sendSmtpCommand(
     $socket,
@@ -375,7 +877,7 @@ $response = sendSmtpCommand(
 if (!smtpResponseStartsWith($response, '235')) {
 
     writeEmailDebug(
-        'SMTP password authentication failed: ' . trim($response)
+        'SMTP password authentication failed.'
     );
 
     fclose($socket);
@@ -387,17 +889,20 @@ if (!smtpResponseStartsWith($response, '235')) {
 
 /* =========================================================
    MAIL FROM
-   ========================================================= */
+========================================================= */
 
 $response = sendSmtpCommand(
     $socket,
-    'MAIL FROM:<' . $fromEmail . '>'
+    'MAIL FROM:<' .
+    $fromEmail .
+    '>'
 );
 
 if (!smtpResponseStartsWith($response, '250')) {
 
     writeEmailDebug(
-        'MAIL FROM failed: ' . trim($response)
+        'MAIL FROM failed: ' .
+        trim($response)
     );
 
     fclose($socket);
@@ -408,12 +913,14 @@ if (!smtpResponseStartsWith($response, '250')) {
 
 
 /* =========================================================
-   RECIPIENT
-   ========================================================= */
+   RCPT TO
+========================================================= */
 
 $response = sendSmtpCommand(
     $socket,
-    'RCPT TO:<' . $to . '>'
+    'RCPT TO:<' .
+    $to .
+    '>'
 );
 
 if (
@@ -422,7 +929,8 @@ if (
 ) {
 
     writeEmailDebug(
-        'RCPT TO failed: ' . trim($response)
+        'RCPT TO failed: ' .
+        trim($response)
     );
 
     fclose($socket);
@@ -433,8 +941,8 @@ if (
 
 
 /* =========================================================
-   START DATA
-   ========================================================= */
+   DATA
+========================================================= */
 
 $response = sendSmtpCommand(
     $socket,
@@ -444,7 +952,8 @@ $response = sendSmtpCommand(
 if (!smtpResponseStartsWith($response, '354')) {
 
     writeEmailDebug(
-        'DATA command failed: ' . trim($response)
+        'DATA command failed: ' .
+        trim($response)
     );
 
     fclose($socket);
@@ -455,79 +964,28 @@ if (!smtpResponseStartsWith($response, '354')) {
 
 
 /* =========================================================
-   EMAIL HEADERS
-   ========================================================= */
-
-$emailHeaders = '';
-
-$emailHeaders .= 'From: ' .
-    $fromName .
-    ' <' .
-    $fromEmail .
-    ">\r\n";
-
-$emailHeaders .= 'To: <' .
-    $to .
-    ">\r\n";
-
-
-/*
- * IMPORTANT:
- *
- * Reply-To is the visitor's email.
- *
- * When you receive the enquiry and click Reply,
- * your email client will reply to the customer.
- */
-
-$emailHeaders .= 'Reply-To: <' .
-    $email .
-    ">\r\n";
-
-$emailHeaders .= 'Subject: ' .
-    encodeSubject($subject) .
-    "\r\n";
-
-$emailHeaders .= "MIME-Version: 1.0\r\n";
-
-$emailHeaders .=
-    "Content-Type: text/plain; charset=UTF-8\r\n";
-
-$emailHeaders .=
-    "Content-Transfer-Encoding: 8bit\r\n";
-
-$emailHeaders .= "\r\n";
-
-
-/* =========================================================
-   SEND EMAIL
-   ========================================================= */
-
-$emailData = $emailHeaders . $body;
-
-
-/*
- * SMTP DATA must finish with:
- *
- * .\r\n
- */
+   SEND EMAIL DATA
+========================================================= */
 
 fwrite(
     $socket,
-    $emailData . "\r\n.\r\n"
+    $emailHeaders .
+    $emailData .
+    "\r\n.\r\n"
 );
 
 
 /* =========================================================
    FINAL SMTP RESPONSE
-   ========================================================= */
+========================================================= */
 
 $response = readSmtpResponse($socket);
 
 if (!smtpResponseStartsWith($response, '250')) {
 
     writeEmailDebug(
-        'Email sending failed: ' . trim($response)
+        'Email sending failed: ' .
+        trim($response)
     );
 
     sendSmtpCommand(
@@ -543,8 +1001,8 @@ if (!smtpResponseStartsWith($response, '250')) {
 
 
 /* =========================================================
-   CLOSE SMTP CONNECTION
-   ========================================================= */
+   QUIT SMTP
+========================================================= */
 
 sendSmtpCommand(
     $socket,
@@ -556,10 +1014,10 @@ fclose($socket);
 
 /* =========================================================
    LOG SUCCESS
-   ========================================================= */
+========================================================= */
 
 writeEmailDebug(
-    'Email successfully sent to ' .
+    'HTML email successfully sent to ' .
     $to .
     ' from visitor ' .
     $email
@@ -568,7 +1026,7 @@ writeEmailDebug(
 
 /* =========================================================
    REDIRECT SUCCESS
-   ========================================================= */
+========================================================= */
 
 header(
     'Location: contact.php?status=success'
@@ -579,7 +1037,7 @@ exit;
 
 /* =========================================================
    FUNCTIONS
-   ========================================================= */
+========================================================= */
 
 
 /**
@@ -593,7 +1051,9 @@ function writeEmailDebug($message)
 
     file_put_contents(
         $logFile,
-        '[' . $timestamp . '] ' .
+        '[' .
+        $timestamp .
+        '] ' .
         $message .
         PHP_EOL,
         FILE_APPEND | LOCK_EX
@@ -610,7 +1070,10 @@ function readSmtpResponse($socket)
 
     while (!feof($socket)) {
 
-        $line = fgets($socket, 515);
+        $line = fgets(
+            $socket,
+            515
+        );
 
         if ($line === false) {
             break;
@@ -619,14 +1082,11 @@ function readSmtpResponse($socket)
         $response .= $line;
 
         /*
-         * SMTP multiline responses look like:
+         * SMTP multiline responses:
          *
          * 250-example
          * 250-example
          * 250 OK
-         *
-         * The final line contains a space
-         * after the status code.
          */
 
         if (
@@ -642,24 +1102,30 @@ function readSmtpResponse($socket)
 
 
 /**
- * Send SMTP command and return server response.
+ * Send SMTP command.
  */
-function sendSmtpCommand($socket, $command)
-{
+function sendSmtpCommand(
+    $socket,
+    $command
+) {
     fwrite(
         $socket,
         $command . "\r\n"
     );
 
-    return readSmtpResponse($socket);
+    return readSmtpResponse(
+        $socket
+    );
 }
 
 
 /**
  * Check SMTP response code.
  */
-function smtpResponseStartsWith($response, $code)
-{
+function smtpResponseStartsWith(
+    $response,
+    $code
+) {
     return strpos(
         trim($response),
         $code
