@@ -6,3 +6,7 @@
 
 #email password
 /includes/email_config.php
+
+.env
+email_config.php
+email_debug.log
