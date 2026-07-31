@@ -103,7 +103,6 @@ include 'includes/header.php';
 
 <?php include 'includes/footer.php'; ?>
 
-<script src="js/main.js"></script>
 
 </body>
 </html>

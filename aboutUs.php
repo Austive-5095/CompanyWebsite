@@ -227,7 +227,6 @@ include 'includes/footer.php';
 
 ?>
 
-<script src="js/main.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const filters = document.querySelectorAll('.gallery-filter');

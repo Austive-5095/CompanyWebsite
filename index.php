@@ -406,7 +406,6 @@ include 'includes/footer.php';
 
 ?>
 
-<script src="js/main.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const sections = document.querySelectorAll('.hero, .home-about, .home-why, .training, .home-testimonial, .home-services');
