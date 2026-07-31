@@ -1213,14 +1213,14 @@ body.contact-page{
 
     width:max-content;
 
-    animation:scrollLogo 70s linear infinite;
+    animation:scrollLogo 150s linear infinite;
 
 }
 
 .clients-track img{
 
-    width:250px;
-    height:120px;
+    width:200px;
+    height:150px;
 
     object-fit:contain;
 
