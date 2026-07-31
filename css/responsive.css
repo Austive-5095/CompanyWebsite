@@ -9,14 +9,18 @@ img, iframe { max-width:100%; }
     .hero p { font-size:1rem; }
 
     .home-about {
-        grid-template-columns:1fr;
+        display:flex;
+        flex-direction:column;
         grid-template-areas:"image" "content";
         gap:34px;
         padding:72px 24px;
         width:100%;
+        max-width:100%;
+        overflow:hidden;
     }
-    .home-about-text { grid-area:content; }
-    .home-about-image { grid-area:image; min-height:360px; margin:0 auto; }
+    .home-about-text { order:2; width:100%; max-width:none; }
+    .home-about-image { order:1; width:100%; max-width:100%; min-width:0; min-height:0; margin:0; }
+    .home-about .home-about-image .about-image-main { width:100%; max-width:100%; height:auto; }
     .photo { width:min(78vw, 320px); height:360px; }
     .position1 { top:0; left:4vw; }
     .position2 { top:10px; left:12vw; width:min(82vw, 340px); height:380px; }
