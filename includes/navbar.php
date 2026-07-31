@@ -27,7 +27,7 @@
                 display:inline-flex;
                 align-items:center;
                 justify-content:center;
-                padding:11px 22px;
+                padding:11px 20px;
                 background:#F7F3EC;
                 color:#333;
                 border:1px solid #D8CDBA;
@@ -36,7 +36,7 @@
                 font-size:15px;
                 font-weight:500;
                 transition:all .3s ease;
-                margin-left:24px;
+                margin-left:6px;
         "
         onmouseover="this.style.background='#A58A5A';this.style.color='#fff';this.style.borderColor='#A58A5A';this.style.transform='translateY(-2px)'"
         onmouseout="this.style.background='#F7F3EC';this.style.color='#333';this.style.borderColor='#D8CDBA';this.style.transform='translateY(0)'">
