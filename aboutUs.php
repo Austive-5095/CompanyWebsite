@@ -108,7 +108,7 @@ include 'includes/navbar.php';
         </a>
 
         <a href="yunus.php" class="team-card member7">
-            <img src="images/yunus.png" alt="Mohd Yunus Omar">
+            <img src="images/yunus1.png" alt="Mohd Yunus Omar">
             <h3>Mohd Yunus Omar</h3>
             <span>Trainer</span>
         </a>
