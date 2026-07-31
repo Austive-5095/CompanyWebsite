@@ -42,7 +42,7 @@ include 'includes/navbar.php';
 
     <div class="about-image">
 
-        <img src="images/background.png" alt="Austive Team">
+        <img src="images/background1.png" alt="Austive Team">
 
     </div>
 
