@@ -28,9 +28,7 @@
 
                 <li><a href="index.php">Home</a></li>
 
-                <li><a href="courses.php">Courses</a></li>
-
-                <li><a href="#">Categories</a></li>
+                <li><a href="course.php">Courses</a></li>
 
                 <li><a href="about.php">About Us</a></li>
 

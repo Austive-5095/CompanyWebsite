@@ -51,11 +51,25 @@ window.addEventListener("scroll", () => {
 
 const trainerPhoto = document.querySelector('.trainer-photo');
 if (trainerPhoto) {
-    window.addEventListener('scroll', () => {
+    let ticking = false;
+
+    function updateTrainerPhoto() {
         const scrollTop = window.pageYOffset;
         const maxOffset = 120;
         const offset = Math.min(maxOffset, scrollTop * 0.18);
         trainerPhoto.style.transform = `translateY(${offset}px)`;
+    }
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                updateTrainerPhoto();
+                ticking = false;
+            });
+            ticking = true;
+        }
     }, { passive: true });
+
+    updateTrainerPhoto();
 }
 

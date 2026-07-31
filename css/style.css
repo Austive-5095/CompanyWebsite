@@ -181,10 +181,12 @@ body.contact-page{
 }
 
 .trainer-photo{
-    position:relative;
+    position:sticky;
+    top:auto;
+    bottom:40px;
     width:100%;
     height:100%;
-    align-self:start;
+    align-self:end;
     transform:translateZ(0);
 }
 

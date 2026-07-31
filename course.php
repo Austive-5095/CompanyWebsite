@@ -65,3 +65,9 @@ include 'includes/navbar.php';
     <?php endforeach; ?>
 
 </section>
+
+<?php
+
+include 'includes/footer.php';
+
+?>
