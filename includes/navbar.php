@@ -1,8 +1,17 @@
 <header id="header">
     <nav class="navbar">
         <div class="logo">
-            <img src="images/logocompany.png" alt="Company Logo" class="logo-img">
-            <span class="logo-text">AUSTIVE HUMAN CAPITAL Sdn Bhd</span>
+
+            <a href="index.php" class="logo-link">
+
+                <img src="images/logocompany.png" alt="Company Logo" class="logo-img">
+
+                <span class="logo-text">
+                    AUSTIVE HUMAN CAPITAL Sdn Bhd
+                </span>
+
+            </a>
+
         </div>
         <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
             <span></span><span></span><span></span>

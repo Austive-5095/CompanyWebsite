@@ -1402,3 +1402,15 @@ body.contact-page{
     }
 
 }
+
+.logo-link{
+
+    display:flex;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
