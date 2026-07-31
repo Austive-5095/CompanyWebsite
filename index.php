@@ -1,9 +1,20 @@
 <?php
-include 'includes/header.php'; 
+
+include 'includes/db.php';
+
+// 查询课程分类
+$stmt = $pdo->query("
+    SELECT title_id, course_title
+    FROM course_category
+    ORDER BY title_id ASC
+");
+
+$courses = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+include 'includes/header.php';
 include 'includes/navbar.php';
+
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -145,300 +156,38 @@ include 'includes/navbar.php';
     </div>
 
 </section>
-<!-- ================= TRAINING ================= -->
 
+
+<!-- ================= TRAINING CATEGORIES ================= -->
 <section class="training">
 
     <div class="training-header">
-
-        <p class="section-subtitle">TRAINING PROGRAMMES</p>
-
-        <h2>Professional Learning Categories</h2>
-
+        <p class="section-subtitle">TRAINING CATEGORIES</p>
+        <h2>Explore Our Training Programmes</h2>
         <p class="training-intro">
-            Explore our professional training categories designed to
-            empower individuals, strengthen organisations and support
-            continuous learning.
+            Choose from a wide range of professional training courses designed to strengthen skills and support career growth.
         </p>
-
     </div>
 
-    <a href="management-system.php" class="training-item">
+    <?php foreach ($courses as $index => $course): ?>
 
-        <span class="training-number">01</span>
+    <a href="training-category.php?id=<?= $course['title_id'] ?>" class="training-item">
+
+        <span class="training-number">
+            <?= str_pad($index + 1, 2, "0", STR_PAD_LEFT) ?>
+        </span>
 
         <div class="training-content">
-
-            <h3>Management Systems</h3>
-
-            <p>
-                International management system programmes covering
-                quality, environmental, food safety and occupational
-                health management.
-            </p>
-
+            <h3><?= htmlspecialchars($course['course_title']) ?></h3>
         </div>
 
         <div class="training-right">
-
-            <span>5 Programmes</span>
-
             <span class="arrow">→</span>
-
         </div>
 
     </a>
 
-    <a href="sales.php" class="training-item">
-
-        <span class="training-number">02</span>
-
-        <div class="training-content">
-
-            <h3>Sales Programmes</h3>
-
-            <p>
-                Practical programmes that improve selling skills,
-                negotiation techniques and customer engagement.
-            </p>
-
-        </div>
-
-        <div class="training-right">
-
-            <span>1 Programme</span>
-
-            <span class="arrow">→</span>
-
-        </div>
-
-    </a>
-
-    <a href="health-safety.php" class="training-item">
-
-        <span class="training-number">03</span>
-
-        <div class="training-content">
-
-            <h3>Health & Safety Training</h3>
-
-            <p>
-                Workplace safety programmes focusing on compliance,
-                risk management and employee wellbeing.
-            </p>
-
-        </div>
-
-        <div class="training-right">
-
-            <span>1 Programme</span>
-
-            <span class="arrow">→</span>
-
-        </div>
-
-    </a>
-
-    <a href="leadership.php" class="training-item">
-
-        <span class="training-number">04</span>
-
-        <div class="training-content">
-
-            <h3>Leadership & Management</h3>
-
-            <p>
-                Develop capable leaders and effective managers through
-                practical workplace learning.
-            </p>
-
-        </div>
-
-        <div class="training-right">
-
-            <span>2 Programmes</span>
-
-            <span class="arrow">→</span>
-
-        </div>
-
-    </a>
-
-    <a href="customer-service.php" class="training-item">
-
-        <span class="training-number">05</span>
-
-        <div class="training-content">
-
-            <h3>Customer Service</h3>
-
-            <p>
-                Enhance customer experience through professional
-                communication and service excellence.
-            </p>
-
-        </div>
-
-        <div class="training-right">
-
-            <span>1 Programme</span>
-
-            <span class="arrow">→</span>
-
-        </div>
-
-    </a>
-
-    <a href="information-technology.php" class="training-item">
-
-        <span class="training-number">06</span>
-
-        <div class="training-content">
-
-            <h3>Information Technology</h3>
-
-            <p>
-                Digital workplace and IT programmes that improve
-                technical capability and productivity.
-            </p>
-
-        </div>
-
-        <div class="training-right">
-
-            <span>1 Programme</span>
-
-            <span class="arrow">→</span>
-
-        </div>
-
-    </a>
-
-    <a href="communication.php" class="training-item">
-
-        <span class="training-number">07</span>
-
-        <div class="training-content">
-
-            <h3>Communication</h3>
-
-            <p>
-                Strengthen interpersonal, presentation and workplace
-                communication skills.
-            </p>
-
-        </div>
-
-        <div class="training-right">
-
-            <span>1 Programme</span>
-
-            <span class="arrow">→</span>
-
-        </div>
-
-    </a>
-
-    <a href="human-resource.php" class="training-item">
-
-        <span class="training-number">08</span>
-
-        <div class="training-content">
-
-            <h3>Human Resource Management</h3>
-
-            <p>
-                Develop modern HR practices that support talent,
-                performance and organisational growth.
-            </p>
-
-        </div>
-
-        <div class="training-right">
-
-            <span>1 Programme</span>
-
-            <span class="arrow">→</span>
-
-        </div>
-
-    </a>
-
-    <a href="team-building.php" class="training-item">
-
-        <span class="training-number">09</span>
-
-        <div class="training-content">
-
-            <h3>Team Building Development</h3>
-
-            <p>
-                Build stronger teams through engaging development
-                activities and collaborative learning.
-            </p>
-
-        </div>
-
-        <div class="training-right">
-
-            <span>1 Programme</span>
-
-            <span class="arrow">→</span>
-
-        </div>
-
-    </a>
-
-    <a href="finance-accounting.php" class="training-item">
-
-        <span class="training-number">10</span>
-
-        <div class="training-content">
-
-            <h3>Finance & Accounting</h3>
-
-            <p>
-                Practical finance and accounting programmes designed
-                for professionals and organisations.
-            </p>
-
-        </div>
-
-        <div class="training-right">
-
-            <span>2 Programmes</span>
-
-            <span class="arrow">→</span>
-
-        </div>
-
-    </a>
-
-    <a href="improvement-tools.php" class="training-item">
-
-        <span class="training-number">11</span>
-
-        <div class="training-content">
-
-            <h3>Improvement Tools & Techniques</h3>
-
-            <p>
-                Continuous improvement methodologies including Lean,
-                Kaizen and quality improvement techniques.
-            </p>
-
-        </div>
-
-        <div class="training-right">
-
-            <span>1 Programme</span>
-
-            <span class="arrow">→</span>
-
-        </div>
-
-    </a>
-
+    <?php endforeach; ?>
 </section>
 <!-- ================= TESTIMONIALS ================= -->
 
