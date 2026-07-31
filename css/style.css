@@ -1114,3 +1114,43 @@ body.contact-page{
     }
 
 }
+
+.training-btn{
+
+    text-align:center;
+
+    margin-top:60px;
+
+}
+
+.view-course-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 36px;
+
+    border:1px solid #222;
+
+    border-radius:999px;
+
+    color:#222;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    transition:.35s;
+
+}
+
+.view-course-btn:hover{
+
+    background:#222;
+
+    color:#fff;
+
+}

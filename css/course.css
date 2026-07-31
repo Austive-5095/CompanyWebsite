@@ -1,0 +1,143 @@
+/* ================= COURSE PAGE ================= */
+
+.course-list{
+
+    max-width:1200px;
+
+    margin:120px auto;
+
+    padding:0 40px;
+
+}
+
+/* Header */
+
+.course-header{
+
+    max-width:700px;
+
+    margin-bottom:80px;
+
+}
+
+.course-header h1{
+
+    font-size:52px;
+
+    font-weight:600;
+
+    margin:15px 0 25px;
+
+    color:#222;
+
+}
+
+.course-header p{
+
+    color:#666;
+
+    line-height:2;
+
+    font-size:17px;
+
+}
+
+/* Item */
+
+.course-item{
+
+    display:grid;
+
+    grid-template-columns:80px 1fr 60px;
+
+    align-items:center;
+
+    gap:40px;
+
+    text-decoration:none;
+
+    color:#222;
+
+    padding:34px 10px;
+
+    border-top:1px solid #ece8e1;
+
+    transition:.35s;
+
+}
+
+.course-item:last-child{
+
+    border-bottom:1px solid #ece8e1;
+
+}
+
+/* Number */
+
+.course-no{
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    color:#999;
+
+}
+
+/* Title */
+
+.course-title h2{
+
+    font-size:30px;
+
+    font-weight:400;
+
+    letter-spacing:.5px;
+
+    transition:.35s;
+
+}
+
+/* Arrow */
+
+.course-arrow{
+
+    font-size:26px;
+
+    color:#999;
+
+    transition:.35s;
+
+    text-align:right;
+
+}
+
+/* Hover */
+
+.course-item:hover{
+
+    background:#faf8f4;
+
+    padding-left:22px;
+
+}
+
+.course-item:hover .course-title h2{
+
+    color:#A58A5A;
+
+}
+
+.course-item:hover .course-arrow{
+
+    transform:translateX(10px);
+
+    color:#A58A5A;
+
+}
+
+.course-item:hover .course-no{
+
+    color:#A58A5A;
+
+}

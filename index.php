@@ -168,8 +168,7 @@ include 'includes/navbar.php';
             Choose from a wide range of professional training courses designed to strengthen skills and support career growth.
         </p>
     </div>
-
-    <?php foreach ($courses as $index => $course): ?>
+    <?php foreach (array_slice($courses, 0, 6) as $index => $course): ?>
 
     <a href="training-category.php?id=<?= $course['title_id'] ?>" class="training-item">
 
@@ -187,7 +186,15 @@ include 'includes/navbar.php';
 
     </a>
 
-    <?php endforeach; ?>
+    <?php endforeach; ?>`
+
+    <div class="training-btn">
+
+    <a href="course.php" class="view-course-btn">
+        View All Courses →
+    </a>
+
+</div>
 </section>
 <!-- ================= TESTIMONIALS ================= -->
 
