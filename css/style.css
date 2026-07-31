@@ -1154,3 +1154,110 @@ body.contact-page{
     color:#fff;
 
 }
+
+/* ================= CLIENTS ================= */
+
+.home-clients{
+
+    padding:140px 0;
+
+    overflow:hidden;
+
+}
+
+.clients-header{
+
+    max-width:700px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+.clients-header h2{
+
+    font-size:46px;
+
+    font-weight:600;
+
+    margin:15px 0 25px;
+
+}
+
+.clients-header p{
+
+    color:#666;
+
+    line-height:1.9;
+
+}
+
+/* Slider */
+
+.clients-slider{
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.clients-track{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:80px;
+
+    width:max-content;
+
+    animation:scrollLogo 70s linear infinite;
+
+}
+
+.clients-track img{
+
+    width:250px;
+    height:120px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+
+    transition:.35s ease;
+
+}
+
+.clients-track img:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* Hover 暂停 */
+
+.clients-slider:hover .clients-track{
+
+    animation-play-state:paused;
+
+}
+
+/* Animation */
+
+@keyframes scrollLogo{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}

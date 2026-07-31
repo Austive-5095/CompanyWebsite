@@ -300,6 +300,114 @@ include 'includes/navbar.php';
 
 </section>
 
+<!-- ================= CLIENTS ================= -->
+
+<section class="home-clients">
+
+    <div class="clients-header">
+
+        <p class="section-subtitle">OUR CLIENTS</p>
+
+        <h2>Trusted by Leading Organisations</h2>
+
+        <p>
+            We are proud to partner with organisations from various
+            industries, delivering professional training and human
+            capital development solutions.
+        </p>
+
+    </div>
+
+    <div class="clients-slider">
+
+        <div class="clients-track">
+
+            <!-- 第一组 -->
+
+            <img src="images/logo/logo1.png" alt="Client">
+            <img src="images/logo/logo2.png" alt="Client">
+            <img src="images/logo/logo3.png" alt="Client">
+            <img src="images/logo/logo4.png" alt="Client">
+            <img src="images/logo/logo5.png" alt="Client">
+            <img src="images/logo/logo6.png" alt="Client">
+            <img src="images/logo/logo7.png" alt="Client">
+            <img src="images/logo/logo8.png" alt="Client">
+            <img src="images/logo/logo9.png" alt="Client">
+            <img src="images/logo/logo10.png" alt="Client">
+            <img src="images/logo/logo11.png" alt="Client">
+            <img src="images/logo/logo12.png" alt="Client">
+            <img src="images/logo/logo13.png" alt="Client">
+            <img src="images/logo/logo14.png" alt="Client">
+            <img src="images/logo/logo15.png" alt="Client">
+            <img src="images/logo/logo16.png" alt="Client">
+            <img src="images/logo/logo17.png" alt="Client">
+            <img src="images/logo/logo18.png" alt="Client">
+            <img src="images/logo/logo19.png" alt="Client">
+            <img src="images/logo/logo20.png" alt="Client">
+            <img src="images/logo/logo21.png" alt="Client">
+            <img src="images/logo/logo22.png" alt="Client">
+            <img src="images/logo/logo23.png" alt="Client">
+            <img src="images/logo/logo24.png" alt="Client">
+            <img src="images/logo/logo25.png" alt="Client">
+            <img src="images/logo/logo26.png" alt="Client">
+            <img src="images/logo/logo27.png" alt="Client">
+            <img src="images/logo/logo28.png" alt="Client">
+            <img src="images/logo/logo29.png" alt="Client">
+            <img src="images/logo/logo30.png" alt="Client">
+            <img src="images/logo/logo31.png" alt="Client">
+            <img src="images/logo/logo32.png" alt="Client">
+            <img src="images/logo/logo33.png" alt="Client">
+            <img src="images/logo/logo34.png" alt="Client">
+            <img src="images/logo/logo35.png" alt="Client">
+            <img src="images/logo/logo36.png" alt="Client">
+            <img src="images/logo/logo37.png" alt="Client">
+
+            <!-- 复制一份，做无限滚动 -->
+
+<img src="images/logo1.png" alt="Client">
+            <img src="images/logo/logo2.png" alt="Client">
+            <img src="images/logo/logo3.png" alt="Client">
+            <img src="images/logo/logo4.png" alt="Client">
+            <img src="images/logo/logo5.png" alt="Client">
+            <img src="images/logo/logo6.png" alt="Client">
+            <img src="images/logo/logo7.png" alt="Client">
+            <img src="images/logo/logo8.png" alt="Client">
+            <img src="images/logo/logo9.png" alt="Client">
+            <img src="images/logo/logo10.png" alt="Client">
+            <img src="images/logo/logo11.png" alt="Client">
+            <img src="images/logo/logo12.png" alt="Client">
+            <img src="images/logo/logo13.png" alt="Client">
+            <img src="images/logo/logo14.png" alt="Client">
+            <img src="images/logo/logo15.png" alt="Client">
+            <img src="images/logo/logo16.png" alt="Client">
+            <img src="images/logo/logo17.png" alt="Client">
+            <img src="images/logo/logo18.png" alt="Client">
+            <img src="images/logo/logo19.png" alt="Client">
+            <img src="images/logo/logo20.png" alt="Client">
+            <img src="images/logo/logo21.png" alt="Client">
+            <img src="images/logo/logo22.png" alt="Client">
+            <img src="images/logo/logo23.png" alt="Client">
+            <img src="images/logo/logo24.png" alt="Client">
+            <img src="images/logo/logo25.png" alt="Client">
+            <img src="images/logo/logo26.png" alt="Client">
+            <img src="images/logo/logo27.png" alt="Client">
+            <img src="images/logo/logo28.png" alt="Client">
+            <img src="images/logo/logo29.png" alt="Client">
+            <img src="images/logo/logo30.png" alt="Client">
+            <img src="images/logo/logo31.png" alt="Client">
+            <img src="images/logo/logo32.png" alt="Client">
+            <img src="images/logo/logo33.png" alt="Client">
+            <img src="images/logo/logo34.png" alt="Client">
+            <img src="images/logo/logo35.png" alt="Client">
+            <img src="images/logo/logo36.png" alt="Client">
+            <img src="images/logo/logo37.png" alt="Client">
+
+        </div>
+
+    </div>
+
+</section>
+
 <?php
 
 include 'includes/footer.php';
