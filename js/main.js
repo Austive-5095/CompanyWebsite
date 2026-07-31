@@ -49,3 +49,13 @@ window.addEventListener("scroll", () => {
 
 });
 
+const trainerPhoto = document.querySelector('.trainer-photo');
+if (trainerPhoto) {
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset;
+        const maxOffset = 120;
+        const offset = Math.min(maxOffset, scrollTop * 0.18);
+        trainerPhoto.style.transform = `translateY(${offset}px)`;
+    }, { passive: true });
+}
+

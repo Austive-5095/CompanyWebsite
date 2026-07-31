@@ -168,6 +168,104 @@ body.contact-page{
     transform:translateY(-2px);
 }
 
+/* ================= TRAINER DETAIL ================= */
+
+.trainer-detail{
+    max-width:1700px;
+    margin:100px auto;
+    padding:0 80px;
+    display:grid;
+    grid-template-columns:minmax(320px, 42%) minmax(0, 58%);
+    gap:70px;
+    align-items:start;
+}
+
+.trainer-photo{
+    position:relative;
+    width:100%;
+    height:100%;
+    align-self:start;
+    transform:translateZ(0);
+}
+
+.trainer-photo img{
+    width:100%;
+    height:100%;
+    min-height:720px;
+    max-height:900px;
+    object-fit:cover;
+    object-position:center top;
+    display:block;
+    border:none;
+    border-radius:0;
+    box-shadow:none;
+}
+
+.trainer-position{
+    color:#A58A5A;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+
+.trainer-info h1{
+    font-size:64px;
+    font-weight:600;
+    line-height:1.1;
+    margin-bottom:60px;
+}
+
+.trainer-section{
+    margin-bottom:60px;
+}
+
+.trainer-section h3{
+    font-size:22px;
+    font-weight:600;
+    padding-bottom:15px;
+    margin-bottom:25px;
+    border-bottom:1px solid #ddd;
+}
+
+.trainer-section p,
+.trainer-section li{
+    color:#666;
+    font-size:18px;
+    line-height:2.1;
+}
+
+.trainer-section ul{
+    list-style:none;
+    padding:0;
+}
+
+.trainer-section li{
+    margin-bottom:15px;
+    padding-left:22px;
+    position:relative;
+}
+
+.trainer-section li::before{
+    content:"•";
+    position:absolute;
+    left:0;
+    color:#A58A5A;
+}
+
+.trainer-back{
+    max-width:1700px;
+    margin:120px auto 40px;
+    padding:0 80px;
+}
+
+.back-link{
+    display:inline-block;
+    text-decoration:none;
+    color:#666;
+}
+
 /* ================= HOME ABOUT IMAGE ================= */
 
 .home-about-image{
