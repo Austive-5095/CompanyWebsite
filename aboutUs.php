@@ -83,35 +83,35 @@ include 'includes/navbar.php';
             <span>Teambuilding Trainer</span>
         </a>
 
-        <div class="team-card member3">
+        <a href="annie.php" class="team-card member3">
             <img src="images/annie.png" alt="Annie Wong Loo Kim">
             <h3>Annie Wong Loo Kim</h3>
             <span>Accounting & Financial Trainer</span>
-        </div>
+        </a>
 
-        <div class="team-card member4">
+        <a href="alex.php" class="team-card member4">
             <img src="images/alex.png" alt="Dr Alex Tan Wei Liang">
             <h3>Dr Alex Tan Wei Liang</h3>
             <span>Quality Improvement Management</span>
-        </div>
+        </a>
 
-        <div class="team-card member5">
+        <a href="liew.php" class="team-card member5">
             <img src="images/liew.png" alt="Liew Weng Kong">
             <h3>Liew Weng Kong</h3>
             <span>Motivation Trainer</span>
-        </div>
+        </a>
 
-        <div class="team-card member6">
+        <a href="nizam.php" class="team-card member6">
             <img src="images/nizam.png" alt="Mohd Nizam Bin Mohd Amin">
             <h3>Mohd Nizam Bin Mohd Amin</h3>
             <span>Operation Excellence Trainer</span>
-        </div>
+        </a>
 
-        <div class="team-card member7">
+        <a href="yunus.php" class="team-card member7">
             <img src="images/yunus.png" alt="Mohd Yunus Omar">
             <h3>Mohd Yunus Omar</h3>
             <span>Trainer</span>
-        </div>
+        </a>
 
     </div>
 
