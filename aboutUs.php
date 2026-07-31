@@ -187,11 +187,6 @@ include 'includes/navbar.php';
             <div class="gallery-caption">Instructor-led Session</div>
         </article>
 
-        <article class="gallery-item feature-tall" data-category="hands-on">
-            <img src="images/aboutphoto5.webp" alt="Instructor demonstrating a practical technique">
-            <div class="gallery-caption">Hands-on Demonstration</div>
-        </article>
-
         <article class="gallery-item feature-small" data-category="hands-on">
             <img src="images/aboutphoto6.webp" alt="Large screen explanation during a practical session">
             <div class="gallery-caption">Clear Instruction</div>

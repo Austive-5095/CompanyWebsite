@@ -330,6 +330,8 @@
 
 }
 
+/* ================= FILTER ================= */
+
 .gallery-filters{
 
     display:flex;
@@ -412,6 +414,8 @@
 
 }
 
+/* ================= GALLERY GRID ================= */
+
 .gallery-grid{
 
     max-width:1280px;
@@ -435,6 +439,8 @@
     transform:translateY(6px);
 
 }
+
+/* ================= ALL GALLERY ITEMS ================= */
 
 .gallery-item{
 
@@ -672,8 +678,6 @@
 
     }
 
-}
-
 /* ================= TRAINER DETAIL ================= */
 
 .trainer-detail{
@@ -886,4 +890,5 @@
 
     letter-spacing:1px;
 
+}
 }
