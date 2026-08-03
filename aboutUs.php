@@ -18,7 +18,7 @@ include 'includes/navbar.php';
 </head>
 
 <body>
-<!-- ================= TESTING ================= -->
+
 <!-- ================= ABOUT US ================= -->
 
 <section class="about">
