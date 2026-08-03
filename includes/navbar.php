@@ -1,5 +1,7 @@
 <?php
-$current_page = basename($_SERVER['PHP_SELF']);
+$request_uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
+$path = strtolower(trim(parse_url($request_uri, PHP_URL_PATH) ?? '', '/'));
+$current_page = $path === '' ? 'index.php' : strtolower(basename($path));
 ?>
 <header id="header">
     <nav class="navbar">
@@ -22,7 +24,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
         <div class="nav-actions">
             <ul id="primary-navigation">
                 <li class="<?php echo $current_page === 'index.php' ? 'active' : ''; ?>"><a href="index.php">Home</a></li>
-                <li class="<?php echo $current_page === 'aboutUs.php' ? 'active' : ''; ?>"><a href="aboutUs.php">About</a></li>
+                <li class="<?php echo $current_page === 'aboutus.php' ? 'active' : ''; ?>"><a href="aboutus.php">About</a></li>
                 <li class="<?php echo $current_page === 'course.php' ? 'active' : ''; ?>"><a href="course.php">Course</a></li>
                 <li class="<?php echo $current_page === 'contact.php' ? 'active' : ''; ?>"><a href="contact.php">Contact</a></li>
             </ul>
