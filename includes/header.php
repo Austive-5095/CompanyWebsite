@@ -11,14 +11,14 @@
 
       <!-- CSS -->
 
-      <link rel="stylesheet" href="css/style.css?v=20260731">
-      <link rel="stylesheet" href="css/headerfooter.css?v=20260731">
-      <link rel="stylesheet" href="css/aboutus.css">
-      <link rel="stylesheet" href="css/contact.css">
-      <link rel="stylesheet" href="css/home-animate.css?v=20260731">
-      <link rel="stylesheet" href="css/responsive.css?v=20260731">
-      <link rel="stylesheet" href="css/course.css?v=20260731">
-      <script src="js/main.js?v=20260731" defer></script>
+      <link rel="stylesheet" href="/css/style.css?v=20260731">
+      <link rel="stylesheet" href="/css/headerfooter.css?v=20260731">
+      <link rel="stylesheet" href="/css/aboutus.css">
+      <link rel="stylesheet" href="/css/contact.css">
+      <link rel="stylesheet" href="/css/home-animate.css?v=20260731">
+      <link rel="stylesheet" href="/css/responsive.css?v=20260731">
+      <link rel="stylesheet" href="/css/course.css?v=20260731">
+      <script src="/js/main.js?v=20260731" defer></script>
 
 
       <!-- Font Awesome -->
