@@ -27,41 +27,7 @@ header.hide{
     transform:translateY(-100%);
 }
 
-/* =========================================================
-   HEADER
-========================================================= */
-header{
-
-    position:fixed;
-
-    top:0;
-    left:0;
-
-    width:100%;
-
-    background:#fff;
-
-    z-index:9999;
-
-    transition:
-        transform .4s ease,
-        background .4s ease,
-        box-shadow .4s ease;
-}
-
-header.scrolled{
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-header.hide{
-
-    transform:translateY(-100%);
-}
-
-/* =========================================================
-   NAVBAR
-========================================================= */
+/* =========================== NAVBAR =========================== */ 
 .navbar{
 
     width:100%;
@@ -84,9 +50,7 @@ header.hide{
 
 }
     
-    /* =========================================================
-       LOGO
-    ========================================================= */ 
+    /* =========================== LOGO =========================== */ 
 .logo{
 
     display:flex;
@@ -95,7 +59,6 @@ header.hide{
 
     gap:15px; 
 
-    flex-shrink:0;
 } 
 
 .logo-link{
@@ -110,13 +73,10 @@ header.hide{
 
     color:inherit;
 
-    white-space:nowrap;
-
 } 
 
 .logo-link:hover,
-.logo-link:focus-visible,
-.logo-link:active{
+.logo-link:focus-visible{
 
     text-decoration:none;
 
@@ -124,19 +84,12 @@ header.hide{
         
 .logo-img{
 
-    display:block;
-
-    width:auto;
-
     height:55px; 
     
-    flex-shrink:0;
 } 
     
 .logo-text{ 
     
-    display:block;
-
     font-size:17px; 
     
     font-weight:700;
@@ -147,38 +100,16 @@ header.hide{
 
     line-height:1.2;
 
-    white-space:nowrap;
-
 } 
     
-/* =========================================================
-   RIGHT SIDE
-========================================================= */
-.nav-actions{
-
-    display:flex;
-    align-items:center;
-    gap:22px;
-
-    flex-shrink:0;
-
-}
-
-/* =========================================================
-   MENU
-========================================================= */
+/* =========================== MENU =========================== */ 
 .navbar ul{ 
     
     display:flex; 
     
-    align-items:center;
-
     list-style:none; 
     
     gap:24px; 
-
-    margin:0;
-    padding:0;
 
 } 
 
@@ -186,18 +117,9 @@ header.hide{
     
     list-style:none; 
 
-    margin:0;
-    padding:0;
-
 } 
 
 .navbar ul li a{ 
-    
-    display:inline-block;
-
-    position:relative;
-
-    padding:5px 0;
     
     text-decoration:none; 
     
@@ -205,10 +127,20 @@ header.hide{
     
     font-weight:500; 
     
-    transition:color .3s ease; 
+    transition:.3s; 
     
+    position:relative; 
 
 } 
+
+.logo-link,
+.logo-link:hover,
+.logo-link:focus-visible,
+.logo-link:active{
+
+    text-decoration:none;
+
+}
 
 /* Hover Line */ 
 
@@ -220,7 +152,7 @@ header.hide{
     
     left:0; 
     
-    bottom:-5px; 
+    bottom:-8px; 
     
     width:0; 
     
@@ -228,7 +160,7 @@ header.hide{
     
     background:#A58A5A; 
     
-    transition:width .3s ease; 
+    transition:.3s; 
 
 } 
 
@@ -255,187 +187,6 @@ header.hide{
     
     width:100%; 
 
-}
-
-/* =========================================================
-   E-LEARNING BUTTON
-========================================================= */
-.elearning-link{
-
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:11px 20px;
-    background:#f7f3ec;
-    color:#333;
-    border:1px solid #d8cdba;
-    text-decoration:none;
-    border-radius:999px;
-    font-size:15px;
-    font-weight:500;
-    white-space:nowrap;
-    transition:
-        background .3s ease,
-        color .3s ease,
-        border-color .3s ease,
-        transform .3s ease;
-}
-
-.elearning-link:hover{
-    background:#A58A5A;
-    color:#fff;
-    border-color:#A58A5A;
-    transform:translateY(-2px);
-}
-
-/* =========================================================
-   MOBILE MENU BUTTON
-========================================================= */
-.nav-toggle{
-
-    display:none;
-
-    width:44px;
-    height:44px;
-
-    padding:10px;
-
-    border:1px solid #d8cdba;
-    border-radius:10px;
-
-    background:#fff;
-
-    cursor:pointer;
-}
-
-.nav-toggle span{
-
-    display:block;
-
-    height:2px;
-
-    margin:5px 0;
-
-    background:#222;
-}
-
-/* =========================================================
-   MOBILE
-========================================================= */
-@media (max-width:768px){
-
-    header{
-        position:sticky;
-        top:0;
-        transform:none !important;
-    }
-
-    .navbar{
-        position:relative;
-        height:72px;
-        padding:0 18px;
-        justify-content:space-between;
-    }
-
-    /* LOGO */
-    .logo{
-        width:auto;
-        justify-content:flex-start;
-        gap:10px;
-        min-width:0;
-    }
-
-    .logo-link{
-        min-width:0;
-        gap:10px;
-        white-space:normal;
-    }
-
-    .logo-img{
-        height:44px;
-        width:auto;
-    }
-
-    .logo-text{
-        max-width:210px;
-        font-size:11px;
-        line-height:1.3;
-        text-align:left;
-        white-space:normal;
-    }
-
-    /* HAMBURGER */
-    .nav-toggle{
-        display:block;
-        flex-shrink:0;
-    }
-
-    /* NAV ACTIONS */
-    .nav-actions{
-        position:absolute;
-        top:72px;
-        left:0;
-        right:0;
-        display:none;
-        flex-direction:column;
-        align-items:stretch;
-        gap:18px;
-        padding:20px;
-        background:#fff;
-        border-top:1px solid #eee;
-        border-bottom:1px solid #eee;
-        box-shadow:0 12px 22px rgba(0,0,0,.08);
-    }
-
-    .nav-actions.is-open{
-        display:flex;
-    }
-
-    .navbar ul{
-        width:100%;
-        display:flex;
-        flex-direction:column;
-        align-items:stretch;
-        gap:0;
-        margin:0;
-        padding:0;
-    }
-
-    .navbar ul li{
-        width:100%;
-    }
-
-    .navbar ul li a{
-        display:block;
-        width:100%;
-        padding:11px 0;
-        font-size:16px;
-        box-sizing:border-box;
-    }
-
-    .navbar ul li a::after{
-        bottom:5px;
-    }
-
-    .elearning-link{
-        width:100%;
-        box-sizing:border-box;
-    }
-}
-
-/* =========================================================
-   VERY SMALL SCREEN
-========================================================= */
-@media (max-width:380px){
-
-    .logo-text{
-        max-width:170px;
-        font-size:10px;
-    }
-
-    .logo-img{
-        height:38px;
-    }
 }
 
 /* FOOTER */
