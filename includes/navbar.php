@@ -1,12 +1,23 @@
 <?php
 $request_uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
 $path = trim(parse_url($request_uri, PHP_URL_PATH) ?? '', '/');
-
-// Hosts can hide the .php extension (for example /aboutus instead of
-// /aboutus.php), so compare the route name rather than the literal URL.
+$query = isset($_SERVER['QUERY_STRING']) ? $_SERVER['QUERY_STRING'] : '';
 $current_page = strtolower(pathinfo(basename($path), PATHINFO_FILENAME));
+
 if ($current_page === '' || $current_page === 'index') {
     $current_page = 'home';
+}
+
+if ($query !== '' && strpos($query, 'about') !== false) {
+    $current_page = 'aboutus';
+}
+
+if ($query !== '' && strpos($query, 'course') !== false) {
+    $current_page = 'course';
+}
+
+if ($query !== '' && strpos($query, 'contact') !== false) {
+    $current_page = 'contact';
 }
 ?>
 <header id="header">
@@ -28,6 +39,7 @@ if ($current_page === '' || $current_page === 'index') {
             <span></span><span></span><span></span>
         </button>
         <div class="nav-actions">
+            <p style="display:none;">current_page=<?php echo htmlspecialchars($current_page); ?> path=<?php echo htmlspecialchars($path); ?></p>
             <ul id="primary-navigation">
                 <li class="<?php echo $current_page === 'home' ? 'active' : ''; ?>"><a href="index.php">Home</a></li>
                 <li class="<?php echo $current_page === 'aboutus' ? 'active' : ''; ?>"><a href="aboutus.php">About</a></li>
