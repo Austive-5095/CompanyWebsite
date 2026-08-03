@@ -60,6 +60,27 @@ header.hide{
     gap:15px; 
 
 } 
+
+.logo-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    text-decoration:none;
+
+    color:inherit;
+
+} 
+
+.logo-link:hover,
+.logo-link:focus-visible{
+
+    text-decoration:none;
+
+} 
         
 .logo-img{
 
@@ -76,6 +97,8 @@ header.hide{
     color:#222;
 
     letter-spacing:.5px; 
+
+    line-height:1.2;
 
 } 
     
@@ -109,6 +132,15 @@ header.hide{
     position:relative; 
 
 } 
+
+.logo-link,
+.logo-link:hover,
+.logo-link:focus-visible,
+.logo-link:active{
+
+    text-decoration:none;
+
+}
 
 /* Hover Line */ 
 
