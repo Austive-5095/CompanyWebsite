@@ -10,7 +10,7 @@
       <title>Austive Human Capital Sdn Bhd</title>
 
       <!-- Favicon -->
-      <link rel="icon" type="image/png" href="/images/logocompany.png">
+      <link rel="icon" type="image" href="/images/logocompany.png">
 
       <!-- CSS -->
 
