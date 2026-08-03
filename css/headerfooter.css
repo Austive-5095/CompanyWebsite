@@ -176,14 +176,14 @@ header.hide{
 
 }
 
-.navbar ul li.active a{ 
+.navbar #primary-navigation li.active > a{ 
     
-    color:#A58A5A; 
+    color:#A58A5A !important; 
     font-weight:700; 
 
 }
 
-.navbar ul li.active a::after{ 
+.navbar #primary-navigation li.active > a::after{ 
     
     width:100%; 
 
