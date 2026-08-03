@@ -10,6 +10,9 @@
 
       <title><?php echo htmlspecialchars($page_title ?? 'Austive Human Capital Sdn Bhd', ENT_QUOTES, 'UTF-8'); ?></title>
 
+      <!-- Favicon -->
+      <link rel="icon" type="image" href="/images/logocompany.png">
+
       <!-- CSS -->
 
       <link rel="stylesheet" href="css/style.css">
