@@ -30,7 +30,7 @@
 
                 <li><a href="course.php">Courses</a></li>
 
-                <li><a href="about.php">About Us</a></li>
+                <li><a href="aboutus.php">About Us</a></li>
 
                 <li><a href="contact.php">Contact Us</a></li>
 
@@ -90,7 +90,7 @@
                     <i class="fab fa-instagram"></i>
                 </a>
 
-                <a href="#">
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
 

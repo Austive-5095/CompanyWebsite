@@ -1,23 +1,9 @@
 <?php
-
+$page_title = 'About Us | Austive Human Capital';
 include 'includes/header.php';
-include 'includes/navbar.php';
-
 ?>
-
-<DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Austive Human Capital Sdn Bhd</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-
 <body>
+<?php include 'includes/navbar.php'; ?>
 
 <!-- ================= ABOUT US ================= -->
 
@@ -66,7 +52,7 @@ include 'includes/navbar.php';
 
         <a href="stellar.php" class="team-card member1">
 
-            <img src="images/stellar.png">
+            <img src="images/stellar.png" alt="Stellar Lee Yoke Siew">
 
             <h3>Stellar Lee Yoke Siew</h3>
 
