@@ -11,10 +11,12 @@ $stmt = $pdo->query("
 
 $courses = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+$page_title = 'Courses | Austive Human Capital';
 include 'includes/header.php';
-include 'includes/navbar.php';
 
 ?>
+<body>
+<?php include 'includes/navbar.php'; ?>
 
 <div class="trainer-back">
     <a href="javascript:history.back()" class="back-link">
@@ -40,7 +42,7 @@ include 'includes/navbar.php';
 
     <?php foreach($courses as $index => $course): ?>
 
-    <a href="#" class="course-item">
+    <a href="course.php" class="course-item">
 
         <div class="course-no">
             <?= str_pad($index + 1, 2, "0", STR_PAD_LEFT) ?>

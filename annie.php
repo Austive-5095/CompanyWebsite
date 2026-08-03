@@ -1,26 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Annie Wong Loo Kim</title>
-
-<link rel="stylesheet" href="css/style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-
-<?php 
-
-include 'includes/navbar.php'; 
+<?php
+$page_title = 'Annie Wong Loo Kim | Austive Human Capital';
 include 'includes/header.php';
-
 ?>
+<body>
+<?php include 'includes/navbar.php'; ?>
 
 <div class="trainer-back">
     <a href="javascript:history.back()" class="back-link">
