@@ -1,5 +1,4 @@
 <?php
-$page_title = 'Contact Us | Austive Human Capital';
 include 'includes/header.php';
 ?>
 
