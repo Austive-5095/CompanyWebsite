@@ -12,22 +12,10 @@ $stmt = $pdo->query("
 $courses = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 include 'includes/header.php';
-include 'includes/navbar.php';
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Austive Human Capital Sdn Bhd</title>
-
-    <link rel="stylesheet" href="css/style.css?v=20260731">
-    <link rel="stylesheet" href="css/responsive.css?v=20260731">
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
 <body>
+<?php include 'includes/navbar.php'; ?>
 
 <section class="hero">
 

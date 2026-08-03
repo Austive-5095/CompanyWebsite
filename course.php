@@ -12,9 +12,10 @@ $stmt = $pdo->query("
 $courses = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 include 'includes/header.php';
-include 'includes/navbar.php';
 
 ?>
+<body>
+<?php include 'includes/navbar.php'; ?>
 
 <div class="trainer-back">
     <a href="javascript:history.back()" class="back-link">

@@ -13,9 +13,9 @@ if ($current_page === '' || $current_page === 'index') {
     <nav class="navbar">
         <div class="logo">
 
-            <a href="index.php" class="logo-link">
+            <a href="/" class="logo-link">
 
-                <img src="images/logocompany.png" alt="Company Logo" class="logo-img">
+                <img src="/images/logocompany.png" alt="Austive Human Capital Sdn Bhd" class="logo-img">
 
                 <span class="logo-text">
                     AUSTIVE HUMAN CAPITAL Sdn Bhd
@@ -29,10 +29,10 @@ if ($current_page === '' || $current_page === 'index') {
         </button>
         <div class="nav-actions">
             <ul id="primary-navigation">
-                <li class="<?php echo $current_page === 'home' ? 'active' : ''; ?>"><a href="index.php">Home</a></li>
-                <li class="<?php echo $current_page === 'aboutus' ? 'active' : ''; ?>"><a href="aboutus.php">About</a></li>
-                <li class="<?php echo $current_page === 'course' ? 'active' : ''; ?>"><a href="course.php">Course</a></li>
-                <li class="<?php echo $current_page === 'contact' ? 'active' : ''; ?>"><a href="contact.php">Contact</a></li>
+                <li class="<?php echo $current_page === 'home' ? 'active' : ''; ?>"><a href="/">Home</a></li>
+                <li class="<?php echo $current_page === 'aboutus' ? 'active' : ''; ?>"><a href="/aboutus.php">About</a></li>
+                <li class="<?php echo $current_page === 'course' ? 'active' : ''; ?>"><a href="/course.php">Course</a></li>
+                <li class="<?php echo $current_page === 'contact' ? 'active' : ''; ?>"><a href="/contact.php">Contact</a></li>
             </ul>
             <a class="elearning-link" href="https://elearning.austive.com" target="_blank" rel="noopener noreferrer">E-Learning &rarr;</a>
         </div>
