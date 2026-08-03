@@ -1,13 +1,3 @@
-<?php
-// Compute a base href so that relative URLs resolve correctly
-// when the site is served from pretty URLs or a subdirectory.
-$base = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');
-if ($base === '' || $base === '.') {
-      $base = '/';
-} else {
-      $base = $base . '/';
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,8 +8,6 @@ if ($base === '' || $base === '.') {
               content="width=device-width, initial-scale=1.0">
 
       <title>Austive Human Capital Sdn Bhd</title>
-
-      <base href="<?php echo $base; ?>">
 
       <!-- CSS -->
 
