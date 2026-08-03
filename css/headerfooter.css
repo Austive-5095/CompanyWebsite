@@ -144,6 +144,19 @@ header.hide{
 
 }
 
+.navbar ul li.active a{ 
+    
+    color:#A58A5A; 
+    font-weight:700; 
+
+}
+
+.navbar ul li.active a::after{ 
+    
+    width:100%; 
+
+}
+
 /* FOOTER */
 
 .footer{

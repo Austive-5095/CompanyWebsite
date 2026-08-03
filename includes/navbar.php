@@ -1,3 +1,6 @@
+<?php
+$current_page = basename($_SERVER['PHP_SELF']);
+?>
 <header id="header">
     <nav class="navbar">
         <div class="logo">
@@ -18,10 +21,10 @@
         </button>
         <div class="nav-actions">
             <ul id="primary-navigation">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="aboutUs.php">About</a></li>
-                <li><a href="course.php">Course</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li class="<?php echo $current_page === 'index.php' ? 'active' : ''; ?>"><a href="index.php">Home</a></li>
+                <li class="<?php echo $current_page === 'aboutUs.php' ? 'active' : ''; ?>"><a href="aboutUs.php">About</a></li>
+                <li class="<?php echo $current_page === 'course.php' ? 'active' : ''; ?>"><a href="course.php">Course</a></li>
+                <li class="<?php echo $current_page === 'contact.php' ? 'active' : ''; ?>"><a href="contact.php">Contact</a></li>
             </ul>
             <a class="elearning-link" href="https://elearning.austive.com" target="_blank" rel="noopener noreferrer">E-Learning &rarr;</a>
         </div>
