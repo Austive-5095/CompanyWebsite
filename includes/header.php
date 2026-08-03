@@ -6,22 +6,20 @@
 
       <meta name="viewport"
               content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Austive Human Capital Sdn Bhd provides professional training, certification, and human capital development programmes.">
 
-      <title><?php echo htmlspecialchars($page_title ?? 'Austive Human Capital Sdn Bhd', ENT_QUOTES, 'UTF-8'); ?></title>
+      <title>Austive Human Capital Sdn Bhd</title>
 
       <!-- CSS -->
 
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/headerfooter.css">
-      <link rel="stylesheet" href="css/aboutus.css">
-      <link rel="stylesheet" href="css/contact.css">
-      <link rel="stylesheet" href="css/home-animate.css">
-      <link rel="stylesheet" href="css/responsive.css">
-      <link rel="stylesheet" href="css/course.css">
-      <script src="js/main.js" defer></script>
+      <link rel="stylesheet" href="/css/style.css?v=20260731">
+      <link rel="stylesheet" href="/css/headerfooter.css?v=20260731">
+      <link rel="stylesheet" href="/css/aboutus.css">
+      <link rel="stylesheet" href="/css/contact.css">
+      <link rel="stylesheet" href="/css/home-animate.css?v=20260731">
+      <link rel="stylesheet" href="/css/responsive.css?v=20260731">
+      <link rel="stylesheet" href="/css/course.css?v=20260731">
+      <script src="/js/main.js?v=20260731" defer></script>
 
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
       <!-- Font Awesome -->
       <link rel="stylesheet"
