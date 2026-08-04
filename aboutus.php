@@ -207,14 +207,19 @@ include 'includes/navbar.php';
             <div class="gallery-caption">Shared Experience</div>
         </article>
 
-        <article class="gallery-item feature-small" data-category="team">
+        <article class="gallery-item feature-medium" data-category="team">
             <img src="images/aboutphoto10.webp" alt="Training completion and seminar group photo">
             <div class="gallery-caption">Community Connection</div>
         </article>
 
-        <article class="gallery-item feature-small" data-category="all">
+        <article class="gallery-item feature-medium" data-category="learning">
             <img src="images/aboutphoto3.webp" alt="A professional training environment">
             <div class="gallery-caption">Professional Setting</div>
+        </article>
+
+        <article class="gallery-item feature-medium" data-category="team">
+            <img src="images/aboutphoto12.jpeg" alt="Team gathering and community activity">
+            <div class="gallery-caption">Team Gathering</div>
         </article>
 
     </div>
