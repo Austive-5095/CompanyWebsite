@@ -51,9 +51,9 @@ include 'includes/header.php';
             <h3>Biography</h3>
 
             <p>
-                Dr. Alex Tan Wei Liang is a dynamic trainer and consultant with 30 years of experience in training and development, covering areas including ICT, customer service, Incoterms, logistics and supply chain, supervisor management, personal development, and service quality.
-                With nearly 29 years of corporate experience, particularly in the education industry, Dr. Tan has extensive exposure to service quality, people development, and process improvement. Throughout his career, he has held key positions in operations, customer service, and customer retention, and has led service quality initiatives to enhance the competencies of front-line staff across the country.
-                He has also served as a quality trainer, conducting training programmes for participants ranging from clerical staff to senior management. His passion for training led him to become a Principal Trainer specialising in soft skills and personal development before furthering his professional career as a Trainer and Researcher with an established training and consulting company.
+                Dr. Alex Tan Wei Liang is a dynamic trainer and consultant with 30 years of experience in training and development, covering areas including ICT, customer service, Incoterms, logistics and supply chain, supervisor management, personal development, and service quality.<br><br>
+                With nearly 29 years of corporate experience, particularly in the education industry, Dr. Tan has extensive exposure to service quality, people development, and process improvement. Throughout his career, he has held key positions in operations, customer service, and customer retention, and has led service quality initiatives to enhance the competencies of front-line staff across the country.<br><br>
+                He has also served as a quality trainer, conducting training programmes for participants ranging from clerical staff to senior management. His passion for training led him to become a Principal Trainer specialising in soft skills and personal development before furthering his professional career as a Trainer and Researcher with an established training and consulting company.<br><br>
                 Dr. Tan holds a PhD in AI and is a certified trainer with PSMB. Today, he is a full-time corporate trainer who has trained individuals from the banking, manufacturing, insurance, broadcasting, telecommunication, aviation, and government sectors.
             </p>
 
