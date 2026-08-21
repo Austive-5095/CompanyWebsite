@@ -130,6 +130,12 @@ include 'includes/header.php';
                     <button type="submit" class="contact-submit">Send Message</button>
                 </div>
             </form>
+
+            <div class="whatsapp-cta">
+                <a href="https://wa.me/60126309119" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
         </section>
 
     </section>
