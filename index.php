@@ -33,6 +33,10 @@ include 'includes/navbar.php';
 
     <div class="hero-content">
 
+        <div class="hero-badge">
+            <i class="fa-solid fa-crown"></i> Founded 2004
+        </div>
+
         <h1>Your Trusted Human Capital Partner</h1>
 
         <p>
