@@ -14,13 +14,13 @@
 
       <!-- CSS -->
 
-      <link rel="stylesheet" href="css/style.css?v=20260731">
-      <link rel="stylesheet" href="css/headerfooter.css?v=20260731">
-      <link rel="stylesheet" href="css/aboutus.css">
-      <link rel="stylesheet" href="css/contact.css">
-      <link rel="stylesheet" href="css/home-animate.css?v=20260731">
-      <link rel="stylesheet" href="css/responsive.css?v=20260731">
-      <link rel="stylesheet" href="css/course.css?v=20260731">
+      <link rel="stylesheet" href="css/style.css?v=<?= filemtime(__DIR__ . '/../css/style.css') ?>">
+      <link rel="stylesheet" href="css/headerfooter.css?v=<?= filemtime(__DIR__ . '/../css/headerfooter.css') ?>">
+      <link rel="stylesheet" href="css/aboutus.css?v=<?= filemtime(__DIR__ . '/../css/aboutus.css') ?>">
+      <link rel="stylesheet" href="css/contact.css?v=<?= filemtime(__DIR__ . '/../css/contact.css') ?>">
+      <link rel="stylesheet" href="css/home-animate.css?v=<?= filemtime(__DIR__ . '/../css/home-animate.css') ?>">
+      <link rel="stylesheet" href="css/responsive.css?v=<?= filemtime(__DIR__ . '/../css/responsive.css') ?>">
+      <link rel="stylesheet" href="css/course.css?v=<?= filemtime(__DIR__ . '/../css/course.css') ?>">
       <script src="js/main.js?v=20260731" defer></script>
 
 
