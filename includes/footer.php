@@ -104,6 +104,20 @@
 
     </div>
 
+     <div class="footer-credentials">
+
+        <p class="credentials-title">Accredited &amp; Certified</p>
+
+        <div class="credentials-logos">
+
+            <img src="images/HRD_Corp-Claimable_Logo.png" alt="HRD Corp Claimable" class="credential-logo hrd-corp">
+
+            <img src="images/Logo_Training_Provider_Logo_Registered_Training_Provider.png" alt="Registered Training Provider" class="credential-logo rtp">
+
+        </div>
+
+    </div>
+
     <div class="footer-bottom">
 
         © 2026 Austive Human Capital Sdn Bhd.

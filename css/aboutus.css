@@ -221,6 +221,106 @@
 }
 
 
+/* ================= CREDENTIALS ================= */
+
+.credentials{
+
+    padding:100px 40px;
+
+    background:#fff;
+
+    text-align:center;
+
+}
+
+.credentials h2{
+
+    font-size:42px;
+
+    margin-top:10px;
+
+    margin-bottom:20px;
+
+}
+
+.credentials-description{
+
+    max-width:760px;
+
+    margin:0 auto 50px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.credentials-badges{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:60px;
+
+    flex-wrap:wrap;
+
+}
+
+.credential-badge{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#f7f4ee;
+
+    border:1px solid #e5e5e5;
+
+    border-radius:16px;
+
+    padding:28px 36px;
+
+    transition:.35s ease;
+
+}
+
+.credential-badge:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    border-color:#d8cdba;
+
+}
+
+.credential-badge img{
+
+    max-height:70px;
+
+    width:auto;
+
+    opacity:.8;
+
+    filter:grayscale(10%);
+
+    transition:opacity .3s ease, filter .3s ease;
+
+}
+
+.credential-badge:hover img{
+
+    opacity:1;
+
+    filter:grayscale(0%);
+
+}
+
 /* ================= CLIENTS ================= */
 
 .clients{
@@ -677,6 +777,32 @@
         grid-column:auto;
 
     }
+
+    .credentials{
+
+        padding:80px 24px;
+
+    }
+
+    .credentials-badges{
+
+        gap:38px;
+
+    }
+
+    .credential-badge{
+
+        padding:20px 28px;
+
+    }
+
+    .credential-badge img{
+
+        max-height:60px;
+
+    }
+
+}
 
 /* ================= TRAINER DETAIL ================= */
 

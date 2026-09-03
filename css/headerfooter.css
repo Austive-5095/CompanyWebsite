@@ -297,6 +297,80 @@ header.hide{
     transform:translateY(-5px);
 }
 
+/* CREDENTIALS */
+
+.footer-credentials{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:24px;
+
+    padding:30px 0 20px;
+
+    border-top:1px solid #ddd;
+
+    text-align:center;
+
+}
+
+.credentials-title{
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:#888;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+    margin:0;
+
+}
+
+.credentials-logos{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:28px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.credential-logo{
+
+    height:50px;
+
+    width:auto;
+
+    filter:grayscale(20%);
+
+    opacity:.85;
+
+    transition:filter .3s ease, opacity .3s ease;
+
+}
+
+.credential-logo:hover{
+
+    filter:grayscale(0%);
+
+    opacity:1;
+
+}
+
 /* COPYRIGHT */
 
 .footer-bottom{
@@ -369,12 +443,32 @@ header.hide{
         gap:40px;
     }
 
-    .footer-box p{
+     .footer-box p{
         max-width:100%;
     }
 
     .social-links{
         justify-content:flex-start;
+    }
+
+    .footer-credentials{
+
+        padding:20px 0 10px;
+
+        gap:16px;
+
+    }
+
+    .credentials-logos{
+
+        gap:18px;
+
+    }
+
+    .credential-logo{
+
+        height:40px;
+
     }
 
 }
@@ -392,6 +486,9 @@ header.hide{
     .navbar ul li a{display:block;padding:11px 0;font-size:16px}
     .navbar ul li a::after{bottom:6px}
     .elearning-link{width:100%}
+    .navbar-cred-logo{
+        height:42px;
+    }
 }
 
 /* Mobile navigation */
@@ -401,6 +498,44 @@ header.hide{
 .nav-toggle{display:none;width:44px;height:44px;padding:10px;border:1px solid #d8cdba;border-radius:10px;background:#fff;cursor:pointer}
 .nav-toggle span{display:block;height:2px;margin:5px 0;background:#222}
 
+/* NAVBAR CREDENTIALS */
+
+.navbar-credentials{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-left:10px;
+
+}
+
+.navbar-cred-logo{
+
+    height:52px;
+
+    width:auto;
+
+    opacity:.8;
+
+    filter:grayscale(5%);
+
+    transition:opacity .3s ease, filter .3s ease, transform .3s ease;
+
+}
+
+.navbar-cred-logo:hover{
+
+    opacity:1;
+
+    filter:grayscale(0%);
+
+    transform:translateY(-2px);
+
+}
+
 @media (max-width:768px){
     header{position:sticky;transform:none !important}
     .navbar{position:relative;height:72px;padding:0 18px;justify-content:space-between}
@@ -414,4 +549,7 @@ header.hide{
     .navbar ul li a{display:block;padding:11px 0;font-size:16px}
     .navbar ul li a::after{bottom:6px}
     .elearning-link{width:100%}
+    .navbar-cred-logo{
+        height:42px;
+    }
 }

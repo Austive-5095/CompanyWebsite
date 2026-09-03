@@ -115,6 +115,38 @@ include 'includes/navbar.php';
 
 </section>
 
+<!-- ================= CREDENTIALS ================= -->
+
+<section class="credentials">
+
+    <p class="section-subtitle">OUR CREDENTIALS</p>
+
+    <h2>Recognised &amp; Accredited Training Provider</h2>
+
+    <p class="credentials-description">
+        Austive Human Capital Sdn Bhd is an HRD Corp Claimable training provider
+        and a registered training organisation, committed to delivering quality
+        programmes that meet national standards.
+    </p>
+
+    <div class="credentials-badges">
+
+        <div class="credential-badge">
+
+            <img src="images/HRD_Corp-Claimable_Logo.png" alt="HRD Corp Claimable">
+
+        </div>
+
+        <div class="credential-badge">
+
+            <img src="images/Logo_Training_Provider_Logo_Registered_Training_Provider.png" alt="Registered Training Provider">
+
+        </div>
+
+    </div>
+
+</section>
+
 <!-- ================= CLIENTS ================= -->
 
 <section class="clients">
