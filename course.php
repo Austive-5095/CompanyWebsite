@@ -40,7 +40,7 @@ include 'includes/navbar.php';
 
     <?php foreach($courses as $index => $course): ?>
 
-    <a href="#" class="course-item">
+    <a href="course_category.php?title_id=<?= $course['title_id'] ?>" class="course-item">
 
         <div class="course-no">
             <?= str_pad($index + 1, 2, "0", STR_PAD_LEFT) ?>

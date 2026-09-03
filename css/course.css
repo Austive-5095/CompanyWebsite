@@ -151,3 +151,97 @@
     .course-arrow{ font-size:22px; }
     .course-item:hover{ padding-left:8px; }
 }
+
+/* ================= CATEGORY COURSE LIST (course_category.php) ================= */
+
+.category-divider{
+    width:100%;
+    max-width:700px;
+    height:1px;
+    margin:40px 0;
+    border:0;
+    background:#ece8e1;
+}
+
+.category-course-divider{
+    width:100px;
+    height:1px;
+    margin:12px 0 16px;
+    border:0;
+    background:#ece8e1;
+}
+
+.category-empty{
+    color:#666;
+    font-size:17px;
+    line-height:1.8;
+    padding:40px 0;
+}
+
+.category-intro{
+    color:#666;
+    line-height:1.8;
+    text-align:justify;
+}
+
+.category-course-desc{
+    margin:0 0 16px;
+    color:#555;
+    font-size:15px;
+    line-height:1.7;
+    text-align:justify;
+}
+
+.category-course-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:28px;
+}
+
+.category-course-item{
+    background:#fff;
+    border:1px solid #ece7de;
+    border-radius:16px;
+    padding:26px 28px;
+    box-shadow:0 8px 24px rgba(34,34,34,.04);
+    display:flex;
+    flex-direction:column;
+    transition:.35s ease;
+}
+
+.category-course-item:hover{
+    transform:translateY(-5px);
+    box-shadow:0 14px 34px rgba(34,34,34,.10);
+}
+
+.category-course-name{
+    font-size:22px;
+    font-weight:600;
+    color:#1f1f1f;
+    margin:0 0 12px;
+}
+
+.category-course-item:hover .category-course-name{
+    color:#A58A5A;
+}
+
+.category-course-desc{
+    margin:0 0 16px;
+    color:#555;
+    font-size:15px;
+    line-height:1.7;
+}
+
+.category-course-price{
+    margin-top:auto;
+    font-size:17px;
+    font-weight:700;
+    color:#A58A5A;
+}
+
+@media(max-width:768px){
+    .category-course-list{
+        grid-template-columns:1fr;
+        gap:22px;
+    }
+}
