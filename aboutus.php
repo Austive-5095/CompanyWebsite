@@ -174,6 +174,28 @@ include 'includes/navbar.php';
 
     </div>
 
+    <div class="clients-video-section">
+
+        <div class="clients-video-divider"></div>
+
+        <h3>Global Client Reach</h3>
+
+        <p class="clients-video-description">
+            Austive has delivered training and consulting services
+            to organizations across multiple industries and regions.
+        </p>
+
+        <div class="clients-video">
+
+            <video controls>
+                <source src="video/Client_Austive.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </div>
+
+    </div>
+
 </section>
 
 <!-- ================= GALLERY ================= -->

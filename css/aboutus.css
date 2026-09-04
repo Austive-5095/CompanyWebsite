@@ -396,6 +396,82 @@
 
 }
 
+/* ================= CLIENTS VIDEO ================= */
+
+.clients-video-section{
+
+    margin-top:80px;
+
+}
+
+.clients-video-divider{
+
+    width:48px;
+
+    height:1px;
+
+    background:#ccc;
+
+    margin:0 auto 40px;
+
+}
+
+.clients-video-section h3{
+
+    font-size:28px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+    line-height:1.2;
+
+}
+
+.clients-video-description{
+
+    max-width:720px;
+
+    margin:0 auto 50px;
+
+    color:#666;
+
+    line-height:1.9;
+
+}
+
+.clients-video{
+
+    max-width:960px;
+
+    margin:0 auto;
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:12px;
+
+    box-shadow:0 4px 24px rgba(0,0,0,.04);
+
+}
+
+.clients-video video{
+
+    width:100%;
+
+    height:100%;
+
+    border-radius:10px;
+
+    display:block;
+
+}
+
 /* ================= GALLERY ================= */
 
 .gallery{

@@ -60,6 +60,7 @@ img, iframe { max-width:100%; }
 
     .about { padding:72px 24px; gap:40px; }
     .about-text h2, .team h2, .clients h2, .gallery h2 { font-size:32px; }
+    .clients-video-section h3 { font-size:22px; }
     .team, .clients { padding:72px 24px; }
     .team-description, .clients-description { margin-bottom:42px; }
     .team-card img { height:300px; }
