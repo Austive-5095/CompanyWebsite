@@ -30,7 +30,7 @@
 
                 <li><a href="course.php">Courses</a></li>
 
-                <li><a href="about.php">About Us</a></li>
+                <li><a href="aboutus.php">About Us</a></li>
 
                 <li><a href="contact.php">Contact Us</a></li>
 
@@ -88,10 +88,6 @@
 
                 <a href="https://www.instagram.com/austive_human_capital?igsh=MTU3M2UzdXk1cWFidA==">
                     <i class="fab fa-instagram"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fab fa-linkedin-in"></i>
                 </a>
 
                 <a href="https://www.youtube.com/@AustiveHumanCapital">
